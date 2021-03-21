@@ -12,7 +12,7 @@ var roomListDiv = document.getElementById("RoomListDiv");
 
 var socket = io();
 
-var jogo_da_velha_ost = new Sound("../client/Jogo-da-Velha/snd/jogo_da_velha_ost.wav",true);
+var jogo_da_velha_ost = new Sound("../client/TinGames/Jogo-da-Velha/snd/jogo_da_velha_ost.wav",true);
 
 var casasPoder = [];
 var poderesPosicionados = [];
@@ -114,7 +114,7 @@ DesenhaTabuleiro = (tabuleiro) => {
                 ctx.clearRect(tabuleiro.casas[l][c].x + Math.floor(tabuleiro.casas[l][c].width/4), tabuleiro.casas[l][c].y + Math.floor(tabuleiro.casas[l][c].height/4), Math.floor(tabuleiro.casas[l][c].width/2), Math.floor(tabuleiro.casas[l][c].height/2));
                 ctx.fillRect(tabuleiro.casas[l][c].x + Math.floor(tabuleiro.casas[l][c].width/4), tabuleiro.casas[l][c].y + Math.floor(tabuleiro.casas[l][c].height/4), Math.floor(tabuleiro.casas[l][c].width/2), Math.floor(tabuleiro.casas[l][c].height/2));
                 var img = new Image();
-                img.src = "../client/Jogo-da-Velha/img/Jogadores/" + tabuleiro.casas[l][c].valor + ".png";
+                img.src = "../client/TinGames/Jogo-da-Velha/img/Jogadores/" + tabuleiro.casas[l][c].valor + ".png";
                 ctx.drawImage(img, tabuleiro.casas[l][c].x + Math.floor(tabuleiro.casas[l][c].width/4), tabuleiro.casas[l][c].y + Math.floor(tabuleiro.casas[l][c].height/4), Math.floor(tabuleiro.casas[l][c].width/2), Math.floor(tabuleiro.casas[l][c].height/2));
             }
         }
@@ -149,7 +149,7 @@ DesenhaUI = (data) => {
 DesenhaTurno = (jogadorAtual) => {
     DesenhaEmptyRect(652,38,100,100,"#FFAEBC")
     imgJogador = new Image();
-    imgJogador.src = "../client/Jogo-da-Velha/img/Jogadores/" + jogadorAtual.valor + ".png";
+    imgJogador.src = "../client/TinGames/Jogo-da-Velha/img/Jogadores/" + jogadorAtual.valor + ".png";
     ctx.drawImage(imgJogador, 665, 50, 75, 75);
 }
 
