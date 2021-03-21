@@ -15,6 +15,9 @@ var projetos = require("./routes/tingames/projetos.js");
 //Robolab
 var robolabHome = require("./routes/robolab/home.js");
 
+//Inovalab
+var inovalabHome = require("./routes/inovalab/home.js");
+
 app.use('/client',express.static(__dirname + "/client"));
 app.use("/", home);
 
@@ -28,7 +31,10 @@ app.use("/tingames/projetos", projetos);
 app.use('/robolab/client',express.static(__dirname + "/client"));
 app.use("/robolab", robolabHome);
 
-server.listen(process.env.PORT || 3000);
+app.use('/inovalab/client',express.static(__dirname + "/client"));
+app.use("/inovalab", inovalabHome);
+
+server.listen(3000);
 
 console.log("Server Started");
 
