@@ -1,1 +1,17 @@
-Adicione a página do robolab aqui
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RoboLab</title>
+    </head>
+    <body>
+        <h1>Aqui é a Página do RoboLab</h1>
+        <p>O arquivo HTML fica em /views/robolab/Home.html</p>
+        <p>A pasta com arquivos adicionais [como css, images, etc] devem ser colocadas e acessadas em /client/RoboLab/Nome_da_Página_HTML</p>
+        <p>Se for necessário adicionar mais páginas no site, basta criar routes adicionais em /routes/robolab/ [dá pra usar as routes do TinGames como base].</p>
+        <p>Tendo criado a route, declare ela dentro do arquivo app.js conforme o exemplo: [dá pra usar de base as que já tem]</p>
+        <span>var routeNova = require("./routes/robolab/nomeDaRoute.js");</span></br>
+        <span>app.use("/robolab/página_para_digitar_no_link", routeNova);</span>
+        <p>Qualquer dúvida é só me chamar [Rafael]</p>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 var manager = require("../app.js");
 
 function Poder() {
-    this.img = "../client/Jogo-da-Velha/img/Jogadores/X.png";
+    this.img = "../client/TinGames/Jogo-da-Velha/img/Jogadores/X.png";
 
     this.Executa = (obj,casa) => {
         manager = require("../app.js");
@@ -17,7 +17,7 @@ function Poder() {
 function Repeticao() {
     Poder.call(this);
 
-    this.img = "../client/Jogo-da-Velha/img/Poderes/repeticao.png";
+    this.img = "../client/TinGames/Jogo-da-Velha/img/Poderes/repeticao.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador) => {
@@ -30,7 +30,7 @@ function Repeticao() {
 function Troca() {
     Poder.call(this);
 
-    this.img = "../client/Jogo-da-Velha/img/Poderes/troca.png";
+    this.img = "../client/TinGames/Jogo-da-Velha/img/Poderes/troca.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador) => {
@@ -81,7 +81,7 @@ function Troca() {
 function Remocao() {
     Poder.call(this);
 
-    this.img = "../client/Jogo-da-Velha/img/Poderes/remocao.png";
+    this.img = "../client/TinGames/Jogo-da-Velha/img/Poderes/remocao.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador) => {
@@ -110,7 +110,7 @@ function Remocao() {
 function Pular_Vez() {
     Poder.call(this);
 
-    this.img = "../client/Jogo-da-Velha/img/Poderes/pular_vez.png";
+    this.img = "../client/TinGames/Jogo-da-Velha/img/Poderes/pular_vez.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador) => {
@@ -126,7 +126,7 @@ function Pular_Vez() {
 function Inverter_Ordem() {
     Poder.call(this);
 
-    this.img = "../client/Jogo-da-Velha/img/Poderes/inverter_ordem.png";
+    this.img = "../client/TinGames/Jogo-da-Velha/img/Poderes/inverter_ordem.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador) => {
@@ -153,7 +153,7 @@ function Inverter_Ordem() {
 function Voltar_Turno() {
     Poder.call(this);
 
-    this.img = "../client/Jogo-da-Velha/img/Poderes/voltar_turno.png";
+    this.img = "../client/TinGames/Jogo-da-Velha/img/Poderes/voltar_turno.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador) => {
