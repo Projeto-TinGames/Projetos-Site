@@ -14,6 +14,9 @@ var projetos = require("./routes/tingames/projetos.js");
 
 //Robolab
 var robolabHome = require("./routes/robolab/home.js");
+var robolabCursos = require("./routes/robolab/cursos.js");
+var robolabPatrocine = require("./routes/robolab/patrocine.js");
+var robolabCompete = require("./routes/robolab/competir.js");
 
 //Inovalab
 var inovalabHome = require("./routes/inovalab/home.js");
@@ -30,6 +33,9 @@ app.use("/tingames/projetos", projetos);
 
 app.use('/robolab/client',express.static(__dirname + "/client"));
 app.use("/robolab", robolabHome);
+app.use("/robolab/cursos", robolabCursos);
+app.use("/robolab/competicao", robolabCompete);
+app.use("/robolab/patrocinadores", robolabPatrocine);
 
 app.use('/inovalab/client',express.static(__dirname + "/client"));
 app.use("/inovalab", inovalabHome);

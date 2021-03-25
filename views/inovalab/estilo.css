@@ -1,0 +1,23 @@
+.JumboHeaderImg {
+    background-image: url("./img/logoHorizontal.jpg");
+    background-size: 50%;
+}
+.headertittle{
+    color: rgb(2, 52, 75);
+}
+.ResImg {
+    max-width: 100%;
+    height: 350px;
+    padding-bottom: 20px;
+}
+.navBarMenu{
+    background-color: rgb(40,168,230);
+}
+.navtitulo{
+    color: white;
+}
+
+.titleText{
+    text-align: center;
+    padding-top: 20px;
+}
