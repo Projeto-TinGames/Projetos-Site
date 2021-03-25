@@ -26,7 +26,7 @@ a:hover {
 
 html,
 body {
-  background-color: #0d9139;
+  background-color: rgb(19, 126, 39);
 }
 
 body {
@@ -85,6 +85,14 @@ body {
 /*
  * Cover
  */
+.card, .header {
+  background-color: rgb(14, 85, 27);
+}
+.header {
+  margin: auto;
+  margin-bottom: 20px;
+  padding-left: 250px;
+}
 .cover {
   padding: 0 1.5rem;
   color: #fffcca;
@@ -100,8 +108,4 @@ body {
  */
 .mastfoot {
   color: #c1ffff;
-}
-
-.card {
-  background-color: #096427;
 }
