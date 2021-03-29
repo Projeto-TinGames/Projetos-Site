@@ -88,11 +88,6 @@ body {
 .card, .header {
   background-color: rgb(14, 85, 27);
 }
-.header {
-  margin: auto;
-  margin-bottom: 20px;
-  padding-left: 250px;
-}
 .cover {
   padding: 0 1.5rem;
   color: #fffcca;

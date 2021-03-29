@@ -7,6 +7,7 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
     this.senha = senha;
     this.maximoJogadores = maximoJogadores;
     this.criadoJogador = criadoJogador;
+    this.linhaGanhar = maximoJogadores+2;
 
     this.jogadores = {};
     this.jogadoresLength = 0;
@@ -177,7 +178,7 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
                     contador = 0;
                     casasVitoria = [];
                 }
-                if (contador == 3) {
+                if (contador == this.linhaGanhar) {
                     this.FinalizarPartida(casasVitoria);
                     return true;
                 }
@@ -198,7 +199,7 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
                     contador = 0;
                     casasVitoria = [];
                 }
-                if (contador == 3) {
+                if (contador == this.linhaGanhar) {
                     this.FinalizarPartida(casasVitoria);
                     return true; 
                 }
@@ -220,7 +221,7 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
                         contador = 0;
                         casasVitoria = [];
                     }
-                    if (contador == 3) {
+                    if (contador == this.linhaGanhar) {
                         this.FinalizarPartida(casasVitoria);
                         return true;
                     }
@@ -241,7 +242,7 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
                         contador = 0;
                         casasVitoria = [];
                     }
-                    if (contador == 3) {
+                    if (contador == this.linhaGanhar) {
                         this.FinalizarPartida(casasVitoria);
                         return true;
                     }
@@ -264,7 +265,7 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
                         contador = 0;
                         casasVitoria = [];
                     }
-                    if (contador == 3) {
+                    if (contador == this.linhaGanhar) {
                         this.FinalizarPartida(casasVitoria);
                         return true;
                     }
@@ -285,7 +286,7 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
                         contador = 0;
                         casasVitoria = [];
                     }
-                    if (contador == 3) {
+                    if (contador == this.linhaGanhar) {
                         this.FinalizarPartida(casasVitoria);
                         return true;
                     }
@@ -309,8 +310,8 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
         primeiraCasaY = casasVitoria[0].y+casasVitoria[0].height/2;
         posicaoPrimeiraCasa = [primeiraCasaX,primeiraCasaY];
     
-        ultimaCasaX = casasVitoria[2].x+casasVitoria[2].width/2;
-        ultimaCasaY = casasVitoria[2].y+casasVitoria[2].height/2;
+        ultimaCasaX = casasVitoria[this.linhaGanhar-1].x+casasVitoria[this.linhaGanhar-1].width/2;
+        ultimaCasaY = casasVitoria[this.linhaGanhar-1].y+casasVitoria[this.linhaGanhar-1].height/2;
         posicaoUltimaCasa = [ultimaCasaX,ultimaCasaY];
     
         this.tabuleiro.casasVitoria = {primeiraCasa:posicaoPrimeiraCasa, ultimaCasa:posicaoUltimaCasa};
