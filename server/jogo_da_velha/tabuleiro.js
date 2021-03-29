@@ -4,6 +4,7 @@ function Tabuleiro(quantidadeJogadores) {
     this.linhas = 4 + this.quantidadeJogadores - 2;
     this.colunas = 4 + this.quantidadeJogadores - 2;
     this.quantidadeCasas = this.linhas*this.colunas;
+    this.casasVitoria = undefined;
 
     this.DefineCasas = () => {
         var casas = [];
@@ -34,8 +35,6 @@ function Tabuleiro(quantidadeJogadores) {
     }
 
     this.casas = this.DefineCasas();
-    this.casasVitoria = undefined;
-
 }
 
 function Casa(x,y,width,height) {
@@ -61,9 +60,12 @@ function Casa(x,y,width,height) {
         this.poderes.push(poder);
     }
 
-    this.ExecutaPoderes = (jogador) => {
+    this.ExecutaPoderes = (jogador,sala) => {
+        if (sala.evento == undefined) {
+            sala.evento = {nome:"AcionaPoderes",poderes:this.poderes.slice(0,this.poderes.length)};
+        }
         while (this.poderes.length > 0) {
-            this.poderes.shift().Executa(this,jogador);
+            this.poderes.shift().Executa(this,jogador,sala);
         }
     }
 }
