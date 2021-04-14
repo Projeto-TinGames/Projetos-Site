@@ -1,69 +1,50 @@
+<!--
+unity webgl responsive
+
+template by dom
+dom@crowscrowscrows.com
+https://twitter.com/zerstoerer
+
+source code on github
+https://github.com/sno/unity-webgl-responsive
+-->
+
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ABCash</title>
-    <link rel="stylesheet" href="./client/TinGames/ABCash/TemplateData/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./client/TinGames/ABCash/favicon.ico">
+
+    <link rel="stylesheet" href="../../client/TinGames/ABCash/assets/css/reset.css">
+    <link rel="stylesheet" href="../../client/TinGames/ABCash/assets/css/style.css">
+
+    <title>ABCash</title>
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <div class="webgl-wrapper">
+      <div class="aspect"></div>
+      <div class="webgl-content">
+        <div id="unityContainer">
+          <canvas id="unity-canvas" style="background: #231F20"></canvas>
         </div>
       </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ABCash</div>
-      </div>
     </div>
+
+    <script src="../../client/TinGames/ABCash/MyLoader.js"></script>
     <script>
-      var buildUrl = "./client/TinGames/ABCash/Build";
-      var loaderUrl = buildUrl + "/ABCash.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/ABCash.data",
-        frameworkUrl: buildUrl + "/ABCash.framework.js",
-        codeUrl: buildUrl + "/ABCash.wasm",
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "../../client/TinGames/ABCash/Build/ABCash.data",
+        frameworkUrl: "../../client/TinGames/ABCash/Build/ABCash.framework.js",
+        codeUrl: "../../client/TinGames/ABCash/Build/ABCash.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ABCash",
         productVersion: "1.0",
-      };
-
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
-      } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-      loadingBar.style.display = "block";
-
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
+      }).then((unityInstance) => {
+        myGameInstance = unityInstance;
+      });
       if (window.confirm('Este jogo necessita que você envie dados sobre suas escolhas dentro do jogo para fins acadêmicos de pesquisa. Deseja continuar?'))
       {
       }
@@ -71,7 +52,22 @@
       {
         window.location = "/tingames/projetos";
       }
-      document.body.appendChild(script);
     </script>
+
+    <!-- check for F key press to toggle full screen -->
+    <!--<script>
+      var isFullscreen = false;
+
+      document.addEventListener('keydown', function(event) {
+          if (event.which === 70) {
+              if (!isFullscreen) {
+                myGameInstance.SetFullscreen(1);
+              } else {
+                myGameInstance.SetFullscreen(0);
+              }
+              isFullscreen = !isFullscreen;
+          }
+      });
+    </script>-->
   </body>
 </html>
