@@ -29,6 +29,11 @@ var robolabCompete = require("./routes/robolab/competir.js");
 
 //Inovalab
 var inovalabHome = require("./routes/inovalab/home.js");
+var inovalabCursos = require("./routes/inovalab/cursos.js");
+var inovalabSobre = require("./routes/inovalab/sobre.js");
+var inovalabProjetos = require("./routes/inovalab/projetos.js");
+var inovalabGaleria = require("./routes/inovalab/galeria.js");
+var inovalabRecursos = require("./routes/inovalab/recursos.js");
 
 app.use('/client',express.static(__dirname + "/client"));
 app.use("/", home);
@@ -49,5 +54,10 @@ app.use("/robolab/patrocinadores", robolabPatrocine);
 
 app.use('/inovalab/client',express.static(__dirname + "/client"));
 app.use("/inovalab", inovalabHome);
+app.use("/inovalab/cursos", inovalabCursos);
+app.use("/inovalab/projetos", inovalabProjetos);
+app.use("/inovalab/rrecursos", inovalabRecursos);
+app.use("/inovalab/galeria", inovalabGaleria);
+app.use("/inovalab/sobre", inovalabSobre);
 
 module.exports = app;
