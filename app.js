@@ -59,7 +59,7 @@ app.use('/inovalab/client',express.static(__dirname + "/client"));
 app.use("/inovalab", inovalabHome);
 app.use("/inovalab/cursos", inovalabCursos);
 app.use("/inovalab/projetos", inovalabProjetos);
-app.use("/inovalab/rrecursos", inovalabRecursos);
+app.use("/inovalab/recursos", inovalabRecursos);
 app.use("/inovalab/galeria", inovalabGaleria);
 app.use("/inovalab/sobre", inovalabSobre);
 
