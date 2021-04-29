@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(cors());
 
+app.set('view engine', 'ejs');
+
 //Home geral
 var home = require("./routes/home.js")
 
@@ -38,7 +40,7 @@ app.use('/tingames/client',express.static(__dirname + "/client"));
 app.use("/tingames", tingamesHome);
 app.use("/tingames/jogo-da-velha", jogoDaVelha);
 app.use("/tingames/abcash", abcash);
-app.use("/tingames/abcash/mysql", abcashMysql);
+app.use("/tingames/abcash/banco", abcash);
 app.use("/tingames/sobre", sobre);
 app.use("/tingames/projetos", projetos);
 app.use("/tingames/cursos", cursos);
