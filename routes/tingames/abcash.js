@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const db = require("../../server/mysqlconnection");
+const db = require("../../server/mysqlconnection.js")
 
 router.get('/', (req, res, next) => {
     res.sendFile(process.cwd() + '/views/tingames/ABCash.html');
@@ -9,6 +9,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/usuarios', (req, res, next) => {
     var sql = "SELECT * FROM usuarios;";
+
     db.query(sql, (err, result) => {
         if (err) throw err;
         res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"usuarios",banco: result});
