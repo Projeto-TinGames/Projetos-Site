@@ -36,7 +36,6 @@ router.get('/respostas', (req, res, next) => {
 });
 
 router.get('/respostas/usuario/:id_usuario', (req, res, next) => {
-    console.log(req.params.id_usuario);
     let id_usuario = req.params.id_usuario;
     var sql = "SELECT * FROM respostas WHERE id_usuario = ?;";
 
