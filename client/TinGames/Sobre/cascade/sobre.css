@@ -24,9 +24,8 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
+body, html {
+  height:100%;
   background-color: #0a4bcb;
 }
 
