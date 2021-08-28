@@ -6,7 +6,7 @@ const server = http.createServer(app);
 const port = process.env.PORT || 3000;
 
 server.listen(port);
-    
+
 console.log("Server Iniciado");
 const io = require('socket.io')(server,{});
 io.sockets.on('connection', function(socket) {
