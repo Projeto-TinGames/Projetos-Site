@@ -19,6 +19,7 @@ https://github.com/sno/unity-webgl-responsive
 
     <link rel="stylesheet" href="../../client/TinGames/Ano-64/assets/css/reset.css">
     <link rel="stylesheet" href="../../client/TinGames/Ano-64/TemplateData/style.css">
+    <link rel="stylesheet" href="../../client/TinGames/Ano-64/assets/css/style.css">
 
     <title>Ano-64</title>
   </head>
@@ -34,14 +35,11 @@ https://github.com/sno/unity-webgl-responsive
               <div id="unity-progress-bar-full"></div>
             </div>
           </div>
-          <div id="unity-mobile-warning">
-          </div>
         </div>
       </div>
     </div>
 
     <script src="../../client/TinGames/Ano-64/MyLoader.js"></script>
-    
     <script>
       var buildUrl = "../../client/TinGames/Ano-64/Build";
       var loaderUrl = buildUrl + "/Ano-64.loader.js";
@@ -75,6 +73,13 @@ https://github.com/sno/unity-webgl-responsive
         });
       };
       document.body.appendChild(script);
+      if (window.confirm('Este jogo necessita que você envie dados sobre suas escolhas dentro do jogo para fins acadêmicos de pesquisa. Deseja continuar?'))
+      {
+      }
+      else
+      {
+        window.location = "/tingames/projetos";
+      }
     </script>
 
     <!-- check for F key press to toggle full screen -->
