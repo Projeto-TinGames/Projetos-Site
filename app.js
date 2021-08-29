@@ -19,6 +19,7 @@ var home = require("./routes/home.js")
 var tingamesHome = require("./routes/tingames/home.js");
 var jogoDaVelha = require("./routes/tingames/jogoDaVelha.js");
 var abcash = require("./routes/tingames/abcash.js");
+var ano64 = require("./routes/tingames/ano64.js");
 var sobre = require("./routes/tingames/sobre.js");
 var projetos = require("./routes/tingames/projetos.js");
 var cursos = require("./routes/tingames/cursos.js");
@@ -44,7 +45,7 @@ app.use('/tingames/client',express.static(__dirname + "/client"));
 app.use("/tingames", tingamesHome);
 app.use("/tingames/jogo-da-velha", jogoDaVelha);
 app.use("/tingames/abcash", abcash);
-app.use("/tingames/abcash/banco", abcash);
+app.use("/tingames/ano64", ano64);
 app.use("/tingames/sobre", sobre);
 app.use("/tingames/projetos", projetos);
 app.use("/tingames/cursos", cursos);

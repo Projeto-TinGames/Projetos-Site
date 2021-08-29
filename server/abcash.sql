@@ -1,103 +1,231 @@
--- MySQL dump 10.13  Distrib 8.0.26, for Linux (x86_64)
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost    Database: abcash
--- ------------------------------------------------------
--- Server version	8.0.26
+-- Host: 127.0.0.1
+-- Tempo de geração: 29-Ago-2021 às 06:09
+-- Versão do servidor: 10.4.17-MariaDB
+-- versão do PHP: 8.0.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Table structure for table `questoes`
+-- Banco de dados: `abcash`
 --
 
-DROP TABLE IF EXISTS `questoes`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `entradas`
+--
+
+CREATE TABLE `entradas` (
+  `id_usuario` int(11) NOT NULL,
+  `id_questao` int(11) NOT NULL,
+  `id_resposta` int(11) NOT NULL,
+  `data` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `entradas`
+--
+
+INSERT INTO `entradas` (`id_usuario`, `id_questao`, `id_resposta`, `data`) VALUES
+(1, 1, 1, '2021-05-10 19:03:50'),
+(1, 2, 4, '2021-05-10 19:03:50'),
+(1, 3, 5, '2021-05-10 19:03:50'),
+(1, 4, 9, '2021-05-10 19:03:50'),
+(1, 5, 11, '2021-05-10 19:03:50'),
+(1, 6, 14, '2021-05-10 19:03:50'),
+(1, 7, 18, '2021-05-10 19:03:50'),
+(1, 8, 20, '2021-05-10 19:03:50'),
+(1, 9, 25, '2021-05-10 19:03:50'),
+(1, 10, 27, '2021-05-10 19:03:50'),
+(2, 1, 1, '2021-07-14 12:40:07'),
+(2, 2, 4, '2021-07-14 12:40:07'),
+(2, 3, 5, '2021-07-14 12:40:07'),
+(2, 4, 7, '2021-07-14 12:40:07'),
+(2, 5, 10, '2021-07-14 12:40:07'),
+(2, 6, 14, '2021-07-14 12:40:07'),
+(2, 7, 17, '2021-07-14 12:40:07'),
+(2, 8, 19, '2021-07-14 12:40:07'),
+(2, 9, 25, '2021-07-14 12:40:07'),
+(2, 10, 28, '2021-07-14 12:40:07'),
+(3, 1, 1, '2021-07-20 19:25:54'),
+(3, 2, 4, '2021-07-20 19:25:54'),
+(3, 3, 5, '2021-07-20 19:25:54'),
+(3, 4, 7, '2021-07-20 19:25:54'),
+(3, 5, 10, '2021-07-20 19:25:54'),
+(3, 6, 15, '2021-07-20 19:25:54'),
+(3, 7, 16, '2021-07-20 19:25:54'),
+(3, 8, 19, '2021-07-20 19:25:54'),
+(3, 9, 25, '2021-07-20 19:25:54'),
+(3, 10, 28, '2021-07-20 19:25:54'),
+(4, 1, 1, '2021-07-20 19:26:51'),
+(4, 2, 3, '2021-07-20 19:26:51'),
+(4, 3, 5, '2021-07-20 19:26:51'),
+(4, 4, 7, '2021-07-20 19:26:51'),
+(4, 5, 10, '2021-07-20 19:26:51'),
+(4, 6, 15, '2021-07-20 19:26:51'),
+(4, 7, 17, '2021-07-20 19:26:51'),
+(4, 8, 19, '2021-07-20 19:26:51'),
+(4, 9, 25, '2021-07-20 19:26:51'),
+(4, 10, 28, '2021-07-20 19:26:51'),
+(5, 1, 1, '2021-08-26 19:09:58'),
+(5, 2, 4, '2021-08-26 19:09:58'),
+(5, 3, 6, '2021-08-26 19:09:58'),
+(5, 4, 7, '2021-08-26 19:09:58'),
+(5, 5, 10, '2021-08-26 19:09:58'),
+(5, 6, 15, '2021-08-26 19:09:58'),
+(5, 7, 16, '2021-08-26 19:09:58'),
+(5, 8, 19, '2021-08-26 19:09:58'),
+(5, 9, 25, '2021-08-26 19:09:58'),
+(5, 10, 28, '2021-08-26 19:09:58');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `questoes`
+--
+
 CREATE TABLE `questoes` (
-  `id` int NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `questoes`
+-- Extraindo dados da tabela `questoes`
 --
 
-LOCK TABLES `questoes` WRITE;
-/*!40000 ALTER TABLE `questoes` DISABLE KEYS */;
-INSERT INTO `questoes` VALUES (1),(2),(3),(4),(5),(6),(7),(8),(9),(10);
-/*!40000 ALTER TABLE `questoes` ENABLE KEYS */;
-UNLOCK TABLES;
+INSERT INTO `questoes` (`id`) VALUES
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7),
+(8),
+(9),
+(10);
+
+-- --------------------------------------------------------
 
 --
--- Table structure for table `respostas`
+-- Estrutura da tabela `respostas`
 --
 
-DROP TABLE IF EXISTS `respostas`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `respostas` (
-  `id_usuario` int NOT NULL,
-  `id_questao` int NOT NULL,
-  `resposta` varchar(500) NOT NULL,
-  `data` datetime NOT NULL,
-  PRIMARY KEY (`id_usuario`,`id_questao`),
-  KEY `id_questao` (`id_questao`),
-  CONSTRAINT `respostas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`),
-  CONSTRAINT `respostas_ibfk_2` FOREIGN KEY (`id_questao`) REFERENCES `questoes` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  `id` int(11) NOT NULL,
+  `texto` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `respostas`
+-- Extraindo dados da tabela `respostas`
 --
 
-LOCK TABLES `respostas` WRITE;
-/*!40000 ALTER TABLE `respostas` DISABLE KEYS */;
-INSERT INTO `respostas` VALUES (1,1,'Ele sai logo da cama.','2021-05-10 19:03:50'),(1,2,'Acorda mais cedo e vai caminhando para o serviço.','2021-05-10 19:03:50'),(1,3,'Optar por se organizar e fazer sua própria marmita. ','2021-05-10 19:03:50'),(1,4,'Usar o tempo para navegar em suas redes.','2021-05-10 19:03:50'),(1,5,'Não comprar o produto, pois não está precisando.','2021-05-10 19:03:50'),(1,6,'Ele pega um sanduíche de carne.','2021-05-10 19:03:50'),(1,7,'Não está muito preocupado com o trabalho.','2021-05-10 19:03:50'),(1,8,'Visita lojas comparando modelos e preços.','2021-05-10 19:03:50'),(1,9,'Ele planeja poupar uma quantia boa todos os meses.','2021-05-10 19:03:50'),(1,10,'Coloca o despertador um pouco mais cedo.','2021-05-10 19:03:50'),(2,1,'Ele sai logo da cama.','2021-07-14 12:40:07'),(2,2,'Acorda mais cedo e vai caminhando para o serviço.','2021-07-14 12:40:07'),(2,3,'Optar por se organizar e fazer sua própria marmita. ','2021-07-14 12:40:07'),(2,4,'Ir para a sala de descanso com seu livro e dar uma lida.','2021-07-14 12:40:07'),(2,5,'Economizar para comprar a vista mais pra frente.','2021-07-14 12:40:07'),(2,6,'Ele pega um sanduíche de carne.','2021-07-14 12:40:07'),(2,7,'Trabalha ao menos 30 min por dia no trabalho.','2021-07-14 12:40:07'),(2,8,'Decide ignorar ele por enquanto.','2021-07-14 12:40:07'),(2,9,'Ele planeja poupar uma quantia boa todos os meses.','2021-07-14 12:40:07'),(2,10,'Já arruma tudo que vai precisar para amanhã.','2021-07-14 12:40:07'),(3,1,'Ele sai logo da cama.','2021-07-20 19:25:54'),(3,2,'Acorda mais cedo e vai caminhando para o serviço.','2021-07-20 19:25:54'),(3,3,'Optar por se organizar e fazer sua própria marmita. ','2021-07-20 19:25:54'),(3,4,'Ir para a sala de descanso com seu livro e dar uma lida.','2021-07-20 19:25:54'),(3,5,'Economizar para comprar a vista mais pra frente.','2021-07-20 19:25:54'),(3,6,'Ele pega um sanduíche de frango.','2021-07-20 19:25:54'),(3,7,'Trabalha o máximo possível no próximo tempo livre.','2021-07-20 19:25:54'),(3,8,'Decide ignorar ele por enquanto.','2021-07-20 19:25:54'),(3,9,'Ele planeja poupar uma quantia boa todos os meses.','2021-07-20 19:25:54'),(3,10,'Já arruma tudo que vai precisar para amanhã.','2021-07-20 19:25:54'),(4,1,'Ele sai logo da cama.','2021-07-20 19:26:51'),(4,2,'Pegar o transporte coletivo para ir ao serviço. ','2021-07-20 19:26:51'),(4,3,'Optar por se organizar e fazer sua própria marmita. ','2021-07-20 19:26:51'),(4,4,'Ir para a sala de descanso com seu livro e dar uma lida.','2021-07-20 19:26:51'),(4,5,'Economizar para comprar a vista mais pra frente.','2021-07-20 19:26:51'),(4,6,'Ele pega um sanduíche de frango.','2021-07-20 19:26:51'),(4,7,'Trabalha ao menos 30 min por dia no trabalho.','2021-07-20 19:26:51'),(4,8,'Decide ignorar ele por enquanto.','2021-07-20 19:26:51'),(4,9,'Ele planeja poupar uma quantia boa todos os meses.','2021-07-20 19:26:51'),(4,10,'Já arruma tudo que vai precisar para amanhã.','2021-07-20 19:26:51'),(5,1,'Ele sai logo da cama.','2021-08-26 19:09:58'),(5,2,'Acorda mais cedo e vai caminhando para o serviço.','2021-08-26 19:09:58'),(5,3,'Ir no restaurante próximo ao local do trabalho.','2021-08-26 19:09:58'),(5,4,'Ir para a sala de descanso com seu livro e dar uma lida.','2021-08-26 19:09:58'),(5,5,'Economizar para comprar a vista mais pra frente.','2021-08-26 19:09:58'),(5,6,'Ele pega um sanduíche de frango.','2021-08-26 19:09:58'),(5,7,'Trabalha o máximo possível no próximo tempo livre.','2021-08-26 19:09:58'),(5,8,'Decide ignorar ele por enquanto.','2021-08-26 19:09:58'),(5,9,'Ele planeja poupar uma quantia boa todos os meses.','2021-08-26 19:09:58'),(5,10,'Já arruma tudo que vai precisar para amanhã.','2021-08-26 19:09:58');
-/*!40000 ALTER TABLE `respostas` ENABLE KEYS */;
-UNLOCK TABLES;
+INSERT INTO `respostas` (`id`, `texto`) VALUES
+(1, 'Ele sai logo da cama.'),
+(2, 'Ele fica alguns minutos na cama.'),
+(3, 'Pegar o transporte coletivo para ir ao serviço.'),
+(4, 'Acorda mais cedo e vai caminhando para o serviço.'),
+(5, 'Optar por se organizar e fazer sua própria marmita.'),
+(6, 'Ir no restaurante próximo ao local do trabalho.'),
+(7, ' Ir para a sala de descanso com seu livro e dar uma lida.'),
+(8, 'Ir para a sala de descanso da empresa e dormir.'),
+(9, ' Usar o tempo para navegar em suas redes.'),
+(10, 'Economizar para comprar a vista mais pra frente.'),
+(11, 'Não comprar o produto, pois não está precisando.'),
+(12, 'Comprar pelo cartão de crédito em várias parcelas.'),
+(13, 'Ele pega um sanduíche vegetariano.'),
+(14, 'Ele pega um sanduíche de carne.'),
+(15, 'Ele pega um sanduíche de frango.'),
+(16, 'Trabalha o máximo possível no próximo tempo livre.'),
+(17, 'Trabalha ao menos 30 min por dia no trabalho.'),
+(18, 'Não está muito preocupado com o trabalho.'),
+(19, 'Decide ignorar ele por enquanto.'),
+(20, 'Visita lojas comparando modelos e preços.'),
+(21, 'Visita lojas online buscando pelo aparelho anunciado.'),
+(22, 'Ele vai guardando o que der.'),
+(23, 'Ele separa a quantia que sobrar todos os meses.'),
+(24, 'Ele não estipula um valor fixo, mas planeja poupar.'),
+(25, 'Ele planeja poupar uma quantia boa todos os meses.'),
+(26, 'Não deixa nada arrumado.'),
+(27, 'Coloca o despertador um pouco mais cedo.'),
+(28, 'Já arruma tudo que vai precisar para amanhã.');
+
+-- --------------------------------------------------------
 
 --
--- Table structure for table `usuarios`
+-- Estrutura da tabela `usuarios`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
-  `id` int NOT NULL,
-  `nome` varchar(60) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  `id` int(11) NOT NULL,
+  `nome` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `usuarios`
+-- Extraindo dados da tabela `usuarios`
 --
 
-LOCK TABLES `usuarios` WRITE;
-/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Teste'),(2,'lorenzo costa'),(3,'Gabriel'),(4,'Paola'),(5,'Gabriela');
-/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+INSERT INTO `usuarios` (`id`, `nome`) VALUES
+(1, 'Teste'),
+(2, 'lorenzo costa'),
+(3, 'Gabriel'),
+(4, 'Paola'),
+(5, 'Gabriela');
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `entradas`
+--
+ALTER TABLE `entradas`
+  ADD PRIMARY KEY (`id_usuario`,`id_questao`,`id_resposta`),
+  ADD KEY `id_questao` (`id_questao`),
+  ADD KEY `id_resposta` (`id_resposta`);
+
+--
+-- Índices para tabela `questoes`
+--
+ALTER TABLE `questoes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `respostas`
+--
+ALTER TABLE `respostas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `entradas`
+--
+ALTER TABLE `entradas`
+  ADD CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`),
+  ADD CONSTRAINT `entradas_ibfk_2` FOREIGN KEY (`id_questao`) REFERENCES `questoes` (`id`),
+  ADD CONSTRAINT `entradas_ibfk_3` FOREIGN KEY (`id_resposta`) REFERENCES `respostas` (`id`);
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2021-08-28 12:17:44
