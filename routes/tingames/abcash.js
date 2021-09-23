@@ -3,8 +3,12 @@ const router = express.Router();
 
 const db = require("../../server/mysqlconnection.js")
 
-router.get('/', (req, res, next) => {
-    res.sendFile(process.cwd() + '/views/tingames/ABCash.html');
+router.get('/questionario', (req, res, next) => {
+    res.sendFile(process.cwd() + '/views/tingames/ABCash-Questionario.html');
+});
+
+router.get('/jvSG@v9Z/jornada', (req, res, next) => {
+    res.sendFile(process.cwd() + '/views/tingames/ABCash-Jornada.html');
 });
 
 router.get('/jvSG@v9Z/entradas', (req, res, next) => {
