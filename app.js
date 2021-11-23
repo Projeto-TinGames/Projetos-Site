@@ -23,6 +23,7 @@ var ano64 = require("./routes/tingames/ano64.js");
 var sobre = require("./routes/tingames/sobre.js");
 var projetos = require("./routes/tingames/projetos.js");
 var cursos = require("./routes/tingames/cursos.js");
+var ambienteDeTestes = require("./routes/tingames/ambienteDeTestes.js");
 
 //Robolab
 var robolabHome = require("./routes/robolab/home.js");
@@ -49,6 +50,7 @@ app.use("/tingames/ano64", ano64);
 app.use("/tingames/sobre", sobre);
 app.use("/tingames/projetos", projetos);
 app.use("/tingames/cursos", cursos);
+app.use("/tingames/ambienteDeTestes", ambienteDeTestes);
 
 app.use('/robolab/client',express.static(__dirname + "/client"));
 app.use("/robolab", robolabHome);

@@ -1,75 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="./client/TinGames/Projetos/img/favicon.ico">
-
-    <title>TinGames</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="./client/TinGames/Projetos/cascade/projetos.css" rel="stylesheet">
-  </head>
-
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-    <div class="inner">
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="/tingames">Home</a>
-            <a class="nav-link active" href="/tingames/projetos">Projetos</a>
-            <a class="nav-link" href="/tingames/cursos">Cursos</a>
-            <a class="nav-link" href="/tingames/sobre">Sobre</a>
-          </nav>
-        </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <div class="container">
-
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                      <a href = "/tingames/jogo-da-velha"><img class="card-img-top" src="./client/TinGames/Projetos/img/thumbnail_jogo-da-velha.png" alt="Jogo da Velha Plus"></a>
-                  <div class="card-body">
-                    <p class="card-text">Jogo da Velha+ é uma repaginada no jogo da velha clássico, aumentando o número de jogadores e adicionando funcionalidades diferentes como as Armadilhas. Junte seus amigos e jogue algumas partidas!</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                      <a href = "/tingames/abcash/questionario"><img class="card-img-top" src="./client/TinGames/Projetos/img/thumbnail_abcash.png" alt="Jogo da Velha Plus"></a>
-                  <div class="card-body">
-                    <p class="card-text">ABCash é um jogo de educação financeira baseado no gênero de jogos de Visual Novel. Você jogará com um personagem chamado Miguel e seu objetivo será tomar as decisões financeiras mais apropriadas à situação dele. Se divirta e não esqueça de compartilhar seus resultados conosco ao fim do jogo!</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/client/tingames/Projetos/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/client/tingames/Projetos/css/projetos.css">
+        <title>TinGames</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../">Home</a>
+                        </li>
+                        <li>
+                            <a id="active" href="./">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="../cursos/">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="../sobre/">Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <ul>
+                    <li>
+                        <div>
+                            <a href="../jogo-da-velha/"><img src="/client/tingames/Projetos/img/thumbnail_jogo-da-velha.png"></img></a>
+                            <p>Jogo da Velha+ é uma repaginada no jogo da velha clássico, aumentando o número de jogadores e adicionando funcionalidades diferentes como as Armadilhas. Junte seus amigos e jogue algumas partidas!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="../abcash/questionario/"><img src="/client/tingames/Projetos/img/thumbnail_abcash.png"></img></a>
+                            <p>ABCash é um jogo de educação financeira baseado no gênero de jogos de Visual Novel. Você jogará com um personagem chamado Miguel e seu objetivo será tomar as decisões financeiras mais apropriadas à situação dele. Se divirta e não esqueça de compartilhar seus resultados conosco ao fim do jogo!</p>
+                        </div>
+                    </li>
+                </ul>
             </main>
-
-      <footer class="mastfoot mt-auto">
-          <div class="inner">
-          <p>Instituto Federal do Rio Grande do Sul – Campus Restinga</p>
+            <footer>
+                <p>Instituto Federal do Rio Grande do Sul – Campus Restinga</p>
+            </footer>
         </div>
-        </footer>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>

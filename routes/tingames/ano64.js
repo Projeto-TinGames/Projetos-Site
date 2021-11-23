@@ -1,8 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-router.get('/jvSG@v9Z/', (req, res, next) => {
-    res.sendFile(process.cwd() + '/views/tingames/Ano64.html');
-});
+const db = require("../../server/mysqlconnection.js")
 
 module.exports = router;
