@@ -41,7 +41,10 @@ https://github.com/sno/unity-webgl-responsive
 
     <script src="/client/TinGames/ABCash/Jornada/MyLoader.js"></script>
     <script>
-      var buildUrl = "/client/TinGames/ABCash/Jornada/Build";
+      const urlParams = new URLSearchParams(window.location.search);
+      const buildNum = urlParams.get('buildNum');
+      var buildUrl = "/client/TinGames/ABCash/Jornada/Builds/Build" + buildNum + "/";
+      console.log(buildUrl);
       var loaderUrl = buildUrl + "/Jornada.loader.js";
       var config = {
         dataUrl: buildUrl + "/Jornada.data",
@@ -90,5 +93,8 @@ https://github.com/sno/unity-webgl-responsive
           }
       });
     </script>-->
+    <script>
+      
+    </script>
   </body>
 </html>

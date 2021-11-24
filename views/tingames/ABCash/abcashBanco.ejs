@@ -6,7 +6,7 @@
         <title>Banco de Dados ABCash</title>
     </head>
     <body style="background-color: #343a40;">
-        <a href = http://localhost:3000/tingames/abcash/jvSG@v9Z/entradas>Entradas</a>
+        <a href=../entradas/>Entradas</a>
         <% if (tabela == "usuarios") { %>
             <table class="table table-bordered table-responsive table-striped table-dark">
                 <tr class = "d-flex">
@@ -17,7 +17,7 @@
                 <% banco.forEach(function(banco){ %>
                     <tr class = "d-flex">
                         <td class="col-4">
-                            <a href="/tingames/abcash/jvSG@v9Z/entradas/usuario/<%= banco.id %>">
+                            <a href="../usuario/<%= banco.id %>">
                                 <%= banco.id %>
                             </a>
                         </td>
@@ -35,7 +35,7 @@
                 <% banco.forEach(function(banco){ %>
                     <tr class = "d-flex">
                         <td class="col-12">
-                            <a href="/tingames/abcash/jvSG@v9Z/entradas/questao/<%= banco.id %>">
+                            <a href="../questao/<%= banco.id %>">
                                 <%= banco.id %>
                             </a>
                         </td>
@@ -53,7 +53,7 @@
                 <% banco.forEach(function(banco){ %>
                     <tr class = "d-flex">
                         <td class="col-4">
-                            <a href="/tingames/abcash/jvSG@v9Z/entradas/resposta/<%= banco.id %>">
+                            <a href="../resposta/<%= banco.id %>">
                                 <%= banco.id %>
                             </a>
                         </td>
@@ -68,17 +68,17 @@
             <table class="table table-bordered table-responsive table-striped table-dark">
                 <tr class = "d-flex">
                     <th class="col-2">
-                        <a href = "/tingames/abcash/jvSG@v9Z/usuarios/">
+                        <a href = "../usuarios/">
                             Usuário
                         </a>
                     </th>
                     <th class="col-2">
-                        <a href = "/tingames/abcash/jvSG@v9Z/questoes/">
+                        <a href = "../questoes/">
                             Questão
                         </a>
                     </th>
                     <th class="col-3">
-                        <a href = "/tingames/abcash/jvSG@v9Z/respostas/">
+                        <a href = "../respostas/">
                             Resposta
                         </a>
                     </th>

@@ -4,45 +4,45 @@ const router = express.Router();
 const db = require("../../server/mysqlconnection.js")
 
 router.get('/questionario', (req, res, next) => {
-    res.sendFile(process.cwd() + '/views/tingames/ABCash-Questionario.html');
+    res.sendFile(process.cwd() + '/views/tingames/ABCash/ABCash-Questionario.html');
 });
 
-router.get('/jvSG@v9Z/entradas', (req, res, next) => {
+router.get('/questionario/entradas/', (req, res, next) => {
     var sql = "SELECT * FROM entradas;";
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"entradas",banco: result});
+        res.render(process.cwd() + '/views/tingames/ABCash/abcashBanco.ejs', {tabela:"entradas",banco: result});
     })
 });
 
-router.get('/jvSG@v9Z/entradas/usuario/:id_usuario', (req, res, next) => {
+router.get('/questionario/entradas/usuario/:id_usuario', (req, res, next) => {
     let id_usuario = req.params.id_usuario;
     var sql = "SELECT * FROM entradas WHERE id_usuario = ?;";
 
     db.query(sql, id_usuario,(err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"entradas",banco: result});
+        res.render(process.cwd() + '/views/tingames/ABCash/abcashBanco.ejs', {tabela:"entradas",banco: result});
     })
 });
 
-router.get('/jvSG@v9Z/entradas/questao/:id_questao', (req, res, next) => {
+router.get('/questionario/entradas/questao/:id_questao', (req, res, next) => {
     let id_questao = req.params.id_questao;
     var sql = "SELECT * FROM entradas WHERE id_questao = ?;";
 
     db.query(sql, id_questao,(err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"entradas",banco: result});
+        res.render(process.cwd() + '/views/tingames/ABCash/abcashBanco.ejs', {tabela:"entradas",banco: result});
     })
 });
 
-router.get('/jvSG@v9Z/entradas/resposta/:id_resposta', (req, res, next) => {
+router.get('/questionario/entradas/resposta/:id_resposta', (req, res, next) => {
     let id_resposta = req.params.id_resposta;
     var sql = "SELECT * FROM entradas WHERE id_resposta = ?;";
 
     db.query(sql, id_resposta,(err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"entradas",banco: result});
+        res.render(process.cwd() + '/views/tingames/ABCash/abcashBanco.ejs', {tabela:"entradas",banco: result});
     })
 });
 
@@ -54,12 +54,12 @@ router.post('/entradas',(req,res,next) => {
     })
 });
 
-router.get('/jvSG@v9Z/usuarios', (req, res, next) => {
+router.get('/questionario/usuarios', (req, res, next) => {
     var sql = "SELECT * FROM usuarios;";
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"usuarios",banco: result});
+        res.render(process.cwd() + '/views/tingames/ABCash/abcashBanco.ejs', {tabela:"usuarios",banco: result});
     })
 });
 
@@ -87,12 +87,12 @@ router.post('/questoes',(req,res,next) => {
     })
 });
 
-router.get('/jvSG@v9Z/questoes', (req, res, next) => {
+router.get('/questionario/questoes', (req, res, next) => {
     var sql = "SELECT * FROM questoes;";
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"questoes",banco: result});
+        res.render(process.cwd() + '/views/tingames/ABCash/abcashBanco.ejs', {tabela:"questoes",banco: result});
     })
 });
 
@@ -105,12 +105,12 @@ router.delete('/questoes/:id_questao',(req,res,next) => {
     })
 })
 
-router.get('/jvSG@v9Z/respostas', (req, res, next) => {
+router.get('/questionario/respostas', (req, res, next) => {
     var sql = "SELECT * FROM respostas;";
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + '/views/tingames/abcashBanco.ejs', {tabela:"respostas",banco: result});
+        res.render(process.cwd() + '/views/tingames/ABCash/abcashBanco.ejs', {tabela:"respostas",banco: result});
     })
 });
 

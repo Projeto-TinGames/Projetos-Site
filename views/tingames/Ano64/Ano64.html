@@ -41,7 +41,9 @@ https://github.com/sno/unity-webgl-responsive
 
     <script src="/client/TinGames/Ano-64/MyLoader.js"></script>
     <script>
-      var buildUrl = "/client/TinGames/Ano-64/Build";
+      const urlParams = new URLSearchParams(window.location.search);
+      const buildNum = urlParams.get('buildNum');
+      var buildUrl = "/client/TinGames/Ano-64/Builds/Build" + buildNum + "/";
       var loaderUrl = buildUrl + "/Ano-64.loader.js";
       var config = {
         dataUrl: buildUrl + "/Ano-64.data",
