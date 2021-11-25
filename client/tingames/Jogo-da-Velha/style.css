@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+}
+
+#FormDiv {
+    text-align:center;
+    display:block;
+}
+
+#RoomListDiv {
+    float:right;
+    display:none;
+}
+
+#TogglePreparar {
+    text-align:center;
+}
+
+#Feedback {
+    text-align:center;
+}
+
+#Instrucoes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.DescricaoPoder {
+    padding: 20px;
+    text-align: center;
+}
+
+canvas {
+    border:1px solid #000000;
+}

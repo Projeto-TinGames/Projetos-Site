@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <style>
+        body {
+          text-align: center;
+          margin: auto;
+          background-color: #CFCFCF;
+          overflow-x: hidden;
+          width: 100%;
+        }
+        #corpinho{
+          background-color: #CFCFCF;
+        }
+        header {
+          background-color: #442A73;
+          padding-top: 0%;
+          position: relative;
+          
+        }
+        section {
+          position: relative;
+          margin: 30px;
+          overflow-x: hidden;
+          background-color: #CFCFCF;
+
+        }
+
+        #menu {
+          font-family: 'Press Start 2P', cursive;
+          color: #fffefe;
+          margin-right: -70%;
+          margin-left: 30%;
+
+        }
+
+        IMG.centro {
+          margin-right: -50%;
+          margin-left: 25%;
+        }
+        
+
+        .nav {
+          overflow: auto;
+          margin:0%;
+        }
+
+        .nav-item {
+          display: block;
+          float: left;
+          color: white;
+          font-size: 10px;
+          text-align:left;
+          line-height: 62px;
+          width:25%;
+          position: relative;
+          background: #9076c0;
+        }
+        
+      .nav-item:last-child {
+        width: 25%;
+        }
+    
+      .nav-item.active,
+      .nav-item:hover {
+        background: #9076c0;
+        background: linear-gradient(#442A73, #442A73);
+        transition: all 1s;
+        }
+      .nav-item.active:after,
+      .nav-item:hover:after {
+        background: #9076c0;
+        background: linear-gradient(#442A73, #442A73);
+        transition: all 1s;
+        }
+      .nav-item:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -30px;
+        width: 60px;
+        height: 60px;
+        transform: scale(0.707) rotate(45deg);
+        z-index: 1;
+        background: #9076c0;
+        box-shadow: 3px -3px 0 2px rgba(255, 255, 255, 0.8);
+    }
+    .nav-item:last-child:after {
+    content: none;
+}
+      h2 {
+        font-family: 'VT323', monospace;
+
+      }
+
+      p {
+        font-family: 'Londrina Solid', cursive;
+        text-align: justify;
+      }
+      
+      footer {
+        position: relative;
+        background-color: #442A73;
+        width:100%;
+        font-family: 'Londrina Solid', cursive;
+
+      }
+      
+      </style>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+<!--é necessário apenas um link rel para as fontes já que
+  todas vem do mesmo lugar :) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<!--link href com todas as fontes que usamos sem precisar colocar um
+link href para cada uma :D -->
+ <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Londrina+Solid:wght@300&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+
+  </head>
+      <body id="corpinho">
+        <header>
+            <img src="logo-robo.jpeg" alt="RoboLab" width=180 height=150>
+            <img class="centro" src="logo-nome.jpeg" alt="RoboLab" width=280 height=120 float=middle>
+              <ol class="nav">
+                <li class="nav-item">
+                  <a id="menu" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a id="menu" href="cursos.html">Aulas</a>
+                </li>
+                <li class="nav-item">
+                  <a id="menu" href="competicao.html">Competições</a>
+                </li>
+                <li class="nav-item">
+                  <a id="menu" href="patrocinadores.html">Patrocinadores</a>
+                </li>
+              </ol>
+            </header>
+<!--separa-->
+            <section id="fotinho">
+              <img class="d-block w-100" style="height: 300px;" alt="Carousel Bootstrap First" src="patrocinio1.png" />
+            <div class="row" style="padding-top: 30px;">
+                <div class="col-md-9">
+                    <h2>
+                      Olá, patrocinador! Seja bem-vindo!
+                    </h2>
+                    <p>
+                      Aqui você irá encontrar irformações sobre nossos projetos e equipe. Somos o RoboLab, um laboratório de robótica pertencente ao IFRS - Campus Restinga. O projeto existe a 2
+                      anos, e com a nossa experiência atual, pretendemos participar de competições mundiais, nacionais e regionais, mas para isso precisamos de sua
+                      ajuda! Nos ajude a levar um pequeno laboratório da Restinga para uma competição mundial!!</p>
+                </div>
+                <div class="col-md-3">
+                  <img alt="Alune" class="d-block p-center" style="height: 200px;" src="pessoaa.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                  <img alt="Controle" class="d-block p-center" style="height: 200px;" src="controle.png" />
+                </div>
+                <div class="col-md-9">
+                    <h2>
+                        Estamos ansiosos para te receber!
+                    </h2>
+                    <p>
+                      O RoboLab Restinga conta com a presença de diversos alunos motivados e determinados a
+                      vivenciar experiências únicas através de competições e eventos onde poderão transmitir
+                      e expandir seus conhecimentos!
+                    </p>
+                    <p>Você gostaria de saber mais sobre nós e nossos projetos? Tem interesse em dar apoiar nossas ideia e pesquisas?
+                       Entre em contato com a gente pelo nosso Intagram ou E-mail e saiba como prosseguir!
+                    </p>
+                    <p>
+                        <a style="color:#9076c0;" href="coragem.html">Saiba mais sobre nós »</a>
+                    </p>
+                </div>
+            </div>
+            </section>
+            <!--separa-->
+            <footer style="padding-top: 10px;">
+              <div class="row" style="margin: 10px;">
+                
+                <div class="col-md-4 d-block">
+                  <address>
+                    <strong style="color: black;">RoboLab Restinga</strong><br /><a  style="color: #CFCFCF;" href="https://www.facebook.com/RoboLab-Restinga-107192431253335" target="_blank"><img style="width: 10%; height: 20%; margin-left: 2px;" src="facebook.png">facebook/RoboLab Restinga</a></br><a  style="color: #CFCFCF;" href="https://www.instagram.com/robolabrestinga/" target="_blank"><img style="width: 10%; height: 20%; margin-left: 2px;" src="instagram.png">Instagram/robolabrestinga</a>
+                  </address>
+                </div>
+
+                <div class="col-md-4 d-block">
+                  <address>
+                  </br><a style="color: #CFCFCF;" href="https://www.youtube.com/channel/UCL29JLVueqZs3pHW3Qr2UZg" target="_blank"><img style="width: 8%; height: 20%; margin-left: 2px;" src="youtube.png"> Youtube/RoboLab Restinga</a></br><a style="color: #CFCFCF;" href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank"><img style="width: 8%; height: 20%; margin-left: 2px;" src="gmail.png"> robolab@restinga.ifrs.edu.br</a>
+                  </address>
+                </div>
+
+                <div class="col-md-4">
+                  <address>
+                    
+                    <strong style="color: black;">IFRS - Campus Restinga</strong><a style="color: #CFCFCF;" href="https://ifrs.edu.br/restinga/" target="_blank"><br /> R. Alberto Hoffmann, 285<br /> Restinga, Porto Alegre - RS<br /> <abbr title="CEP">CEP:</abbr> 91791-508 </a>
+                  </address>
+                </div>
+              </div>
+              </footer>
+        
+<!--separa-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>
