@@ -2,7 +2,7 @@ var poderesPosicionados = [];
 var casasPoder = [];
 var janelaOpcoes = false;
 var listaJogadores = false;
-var ativarMusica = true;
+var ativarMusica = false;
 var mensagemPopup;
 var objetosPopup = [];
 var xPopup;
