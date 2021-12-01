@@ -7,7 +7,8 @@ function Sala(index,privado,senha,maximoJogadores,criadoJogador) {
     this.senha = senha;
     this.maximoJogadores = maximoJogadores;
     this.criadoJogador = criadoJogador;
-    this.linhaGanhar = maximoJogadores+2;
+    this.linhaGanhar = 3;
+    //this.linhaGanhar = maximoJogadores+2;
 
     this.jogadores = {};
     this.jogadoresLength = 0;

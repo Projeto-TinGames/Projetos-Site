@@ -88,7 +88,7 @@ var elementosPrincipal = [botaoPrincipal1,botaoPrincipal2,botaoPrincipal3,botaoP
 var campoJogar1 = new CampoInput(292,170,cor4,20,"Digite seu nome");
 var interruptorJogar1 = new InterruptorValores(435,252,["Não","Sim"])
 var botaoJogar1 = new Botao(310,230,cor4,"Privado:",AtualizarInterruptor,[interruptorJogar1]);
-var campoJogar2 = new CampoInput(490,290,cor4,1,"","number",['2','3','4']);
+var campoJogar2 = new CampoInput(490,290,cor4,1,"","number",undefined);
 var campoJogar3 = new CampoInput(299,290,cor4,20,"Digite a senha","password");
 var campoMostrado1;
 var botaoJogar2 = new Botao(353,350,cor4,"Entrar",EntrarSala,[]);
@@ -99,7 +99,7 @@ var elementosJogar = [campoJogar1,botaoJogar1,interruptorJogar1,campoMostrado1,b
 var campoCriar1 = new CampoInput(292,170,cor4,20,"Digite seu nome");
 var interruptorCriar1 = new InterruptorValores(420,252,["Não","Sim"])
 var botaoCriar1 = new Botao(292,230,cor4,"Privado:",AtualizarInterruptor,[interruptorCriar1]);
-var campoCriar2 = new CampoInput(490,290,cor4,1,"","number",['2','3','4']);
+var campoCriar2 = new CampoInput(490,290,cor4,1,"","number",undefined);
 var campoCriar3 = new CampoInput(425,230,cor4,20,"Senha","password");
 var botaoCriar2 = new Botao(360,350,cor4,"Criar",CriarSala,[]);
 var botaoCriar3 = new Botao(353,410,cor4,"Voltar",Principal,[]);

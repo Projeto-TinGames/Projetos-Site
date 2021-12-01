@@ -3,7 +3,7 @@ const poderes = require("./poderes.js");
 function Jogador(nome,id,index,casasValidas,poderes) {
     this.nome = nome;
     this.id = id;
-    this.valores = ["X","O","Δ","[]"];
+    this.valores = ["X","O","Δ","[]","A","B","C","D","E","F"];
     this.casasInvalidas = [];
     this.casasValidas = casasValidas;
     this.continuarSala = true;
