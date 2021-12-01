@@ -16,7 +16,7 @@ function Sound(src,loop,volume) {
     }
 }
 
-var ost = new Sound("../client/TinGames/Jogo-da-Velha/sons/jogo_da_velha_ost.wav",true,0.3);
+var ost = new Sound("../client/tingames/Jogo-da-Velha/sons/jogo_da_velha_ost.wav",true,0.3);
 
 AtualizaSom = (ativar) => {
     ControlaMusica(ost,ativar);

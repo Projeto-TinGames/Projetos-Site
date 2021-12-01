@@ -58,7 +58,7 @@ DesenhaTabuleiro = (tabuleiro) => {
                 ctx.clearRect(tabuleiro.casas[l][c].x + Math.floor(tabuleiro.casas[l][c].width/4), tabuleiro.casas[l][c].y + Math.floor(tabuleiro.casas[l][c].height/4), Math.floor(tabuleiro.casas[l][c].width/2), Math.floor(tabuleiro.casas[l][c].height/2));
                 ctx.fillRect(tabuleiro.casas[l][c].x + Math.floor(tabuleiro.casas[l][c].width/4), tabuleiro.casas[l][c].y + Math.floor(tabuleiro.casas[l][c].height/4), Math.floor(tabuleiro.casas[l][c].width/2), Math.floor(tabuleiro.casas[l][c].height/2));
                 var imgJogador = new Image();
-                imgJogador.src = "../client/TinGames/Jogo-da-Velha/img/Jogadores/" + tabuleiro.casas[l][c].valor + ".png";
+                imgJogador.src = "../client/tingames/Jogo-da-Velha/img/Jogadores/" + tabuleiro.casas[l][c].valor + ".png";
                 ctx.drawImage(imgJogador, tabuleiro.casas[l][c].x + Math.floor(tabuleiro.casas[l][c].width/4), tabuleiro.casas[l][c].y + Math.floor(tabuleiro.casas[l][c].height/4), Math.floor(tabuleiro.casas[l][c].width/2), Math.floor(tabuleiro.casas[l][c].height/2));
             }
         }
@@ -127,7 +127,7 @@ DesenhaLista = (sala) => {
             ctx.lineTo(545,176 + 30*contador+6);
             ctx.stroke();
             var imgJogador = new Image();
-            imgJogador.src = "../client/TinGames/Jogo-da-Velha/img/Jogadores/" + sala.jogadores[i].valor + ".png";
+            imgJogador.src = "../client/tingames/Jogo-da-Velha/img/Jogadores/" + sala.jogadores[i].valor + ".png";
             ctx.drawImage(imgJogador, 525, 176+30*contador-16, 16, 16);
             ctx.drawImage(imgJogador, 525, 176+30*contador-16, 16, 16);
             ctx.drawImage(imgJogador, 525, 176+30*contador-16, 16, 16);
