@@ -21,13 +21,9 @@ header nav {
 }
 
 header nav ul li {
+    color: #c1ffff;
 	display: inline-block;
     list-style: none;
-}
-
-header nav ul li #active {
-    color: #c1ffff;
-    border-bottom-color: #c1ffff;
 }
 
 header nav ul li a {
@@ -42,31 +38,54 @@ header nav ul li a {
 }
 header nav ul li a:hover, header nav ul li a:focus, 
 header nav ul li #active:hover, header nav ul li #active:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+    color: #c1ffff;
 }
 
 main {
     margin-top: 100px;
 }
 
-main p {
-    color: #FFD6FC;
+main ul li {
+	display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 2%;
+    width: 30%;
+    background-color: #063592;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main ul li div {
+    border-radius: 5px;
+    border: 1px solid #062c7a;
+}
+
+main ul li div img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+main ul li div .titulo {
     text-align: center;
-    font-size: 20px;
-}
+    font-weight: 700;
+    color: #FFD6FC;
 
-main a {
+    padding: 20px 10px;
+
+    text-shadow: none;
     text-decoration: underline;
-    color: #f86cef;
 }
 
-main video {
-    display: block;
-    margin: 0 auto;
+main ul li div .descricao {
+    text-align: center;
+    color:#FFFCCA;
+    padding: 20px 10px;
+    text-shadow: none;
 }
 
 footer {
-    margin-top: 103px;
+    margin-top: 37px;
     text-align: center;
     color: #C1FFFF;
 }

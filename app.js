@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-//const mongoose = require('mongoose');
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({extended: false}));
@@ -16,11 +15,10 @@ app.set('view engine', 'ejs');
 var home = require("./routes/home.js")
 
 //TinGames
-var tingamesHome = require("./routes/tingames/homeTinGames.js");
-var jogoDaVelha = require("./routes/tingames/jogoDaVelha.js");
-var abcash = require("./routes/tingames/abcash.js");
-var ano64 = require("./routes/tingames/ano64.js");
-var ambienteDeTestes = require("./routes/tingames/ambienteDeTestes.js");
+var tingamesHome = require("./routes/tingames/home.js");
+var jogos = require("./routes/tingames/jogos.js");
+var cursos = require("./routes/tingames/cursos.js");
+var ambienteDeTestes = require("./routes/tingames/testes.js");
 
 //Robolab
 var robolabHome = require("./routes/robolab/home.js");
@@ -41,9 +39,8 @@ app.use("/", home);
 
 app.use('/tingames/client',express.static(__dirname + "/client"));
 app.use("/tingames", tingamesHome);
-app.use("/tingames/jogo-da-velha", jogoDaVelha);
-app.use("/tingames/abcash", abcash);
-app.use("/tingames/ano64", ano64);
+app.use("/tingames/projetos/jogos", jogos);
+app.use("/tingames/projetos/cursos", cursos);
 app.use("/tingames/ambienteDeTestes", ambienteDeTestes);
 
 app.use('/robolab/client',express.static(__dirname + "/client"));
