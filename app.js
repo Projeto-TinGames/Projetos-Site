@@ -11,7 +11,7 @@ app.use(cors());
 
 app.set("view engine", "ejs");
 
-//Home geral
+//Home principal
 var home = require("./routes/home.js")
 
 //TinGames
