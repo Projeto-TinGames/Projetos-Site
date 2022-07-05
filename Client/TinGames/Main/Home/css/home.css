@@ -26,8 +26,8 @@ header nav ul li {
 }
 
 header nav ul li #active {
-    color: #c1ffff;
-    border-bottom-color: #c1ffff;
+    color: #cb5ef3;
+    border-bottom-color: #cb5ef3;
 }
 
 header nav ul li a {
@@ -50,20 +50,43 @@ main {
 }
 
 main figure {
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
 main figure img {
-    width: 320px;
+    max-width: 320px;
 }
 
-main figcaption {
-    color: #FFD6FC;
-    font-size: 20px;
+main ul li {
+	display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 2%;
+    width: 289px;
+}
+
+main ul li div .titulo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    color: #b027e2;
+
+    padding: 10px 10px;
+
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+main ul li div .descricao {
+    text-align: justify;
+    color: #ffcb62;
+    padding: 10px 10px;
+    text-shadow: none;
+    line-height: 30px;
 }
 
 footer {
-    margin-top: 160px;
+    margin-top: 80px;
     text-align: center;
-    color: #C1FFFF;
+    color: #cb5ef3;
 }

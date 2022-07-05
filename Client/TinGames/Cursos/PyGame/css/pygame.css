@@ -12,7 +12,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #0a4bcb;
+    background-color: #140615;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -23,11 +23,6 @@ header nav {
 header nav ul li {
 	display: inline-block;
     list-style: none;
-}
-
-header nav ul li #active {
-    color: #c1ffff;
-    border-bottom-color: #c1ffff;
 }
 
 header nav ul li a {
@@ -42,7 +37,7 @@ header nav ul li a {
 }
 header nav ul li a:hover, header nav ul li a:focus, 
 header nav ul li #active:hover, header nav ul li #active:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+    color: #cb5ef3;
 }
 
 main {
@@ -50,14 +45,14 @@ main {
 }
 
 main p {
-    color: #FFD6FC;
+    color: #d59beb;
     text-align: center;
     font-size: 20px;
 }
 
 main a {
     text-decoration: underline;
-    color: #f86cef;
+    color: #f1cf8a;
 }
 
 main video {
@@ -68,5 +63,5 @@ main video {
 footer {
     margin-top: 103px;
     text-align: center;
-    color: #C1FFFF;
+    color: #cb5ef3;
 }

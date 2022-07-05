@@ -12,7 +12,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #0a4bcb;
+    background-color: #140615;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -21,7 +21,7 @@ header nav {
 }
 
 header nav ul li {
-    color: #c1ffff;
+    color: #cb5ef3;
 	display: inline-block;
     list-style: none;
 }
@@ -38,11 +38,11 @@ header nav ul li a {
 }
 header nav ul li a:hover, header nav ul li a:focus, 
 header nav ul li #active:hover, header nav ul li #active:focus {
-    color: #c1ffff;
+    color: #cb5ef3;
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 main ul li {
@@ -51,26 +51,26 @@ main ul li {
     text-decoration: none;
     margin-left: 2%;
     width: 289px;
-    background-color: #063592;
+    background-color: #200a22;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 main ul li div {
     border-radius: 5px;
-    border: 1px solid #062c7a;
+    border: 1px solid #0f0511;
 }
 
 main ul li div img {
     width: 100%;
     border-radius: 3px;
-    min-height: 180px;
+    min-height: 210px;
 }
 
 main ul li div .titulo {
     text-align: center;
     font-weight: 700;
-    color: #FFD6FC;
+    color: #d698eb;
 
     padding: 20px 10px;
 
@@ -82,13 +82,13 @@ main ul li div .titulo {
 main ul li div .descricao {
     text-align: justify;
     line-height: 22px;
-    color:#FFFCCA;
+    color: #ffcb62;
     padding: 20px 10px;
     text-shadow: none;
 }
 
 footer {
-    margin-top: 37px;
+    margin-top: 70px;
     text-align: center;
-    color: #C1FFFF;
+    color: #cb5ef3;
 }

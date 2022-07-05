@@ -12,7 +12,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #0a4bcb;
+    background-color: #140615;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -26,8 +26,8 @@ header nav ul li {
 }
 
 header nav ul li #active {
-    color: #c1ffff;
-    border-bottom-color: #c1ffff;
+    color: #cb5ef3;
+    border-bottom-color: #cb5ef3;
 }
 
 header nav ul li a {
@@ -55,14 +55,14 @@ main ul li {
     text-decoration: none;
     margin-left: 2%;
     width: 289px;
-    background-color: #063592;
+    background-color: #200a22;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 main ul li div {
     border-radius: 5px;
-    border: 1px solid #062c7a;
+    border: 1px solid #0f0511;
 }
 
 main ul li div img {
@@ -74,11 +74,11 @@ main ul li div img {
 main ul li div .titulo {
     text-align: center;
     font-weight: 700;
-    color: #FFD6FC;
+    color: #d698eb;
 
     padding: 20px 10px;
 
-    text-shadow: none;
+    text-shadow: none;  
     text-decoration: underline;
     font-size: 24px;
 }
@@ -86,7 +86,7 @@ main ul li div .titulo {
 main ul li div .descricao {
     text-align: justify;
     line-height: 22px;
-    color:#FFFCCA;
+    color: #ffcb62;
     padding: 20px 10px;
     text-shadow: none;
 }
@@ -94,5 +94,5 @@ main ul li div .descricao {
 footer {
     margin-top: 37px;
     text-align: center;
-    color: #C1FFFF;
+    color: #cb5ef3;
 }
