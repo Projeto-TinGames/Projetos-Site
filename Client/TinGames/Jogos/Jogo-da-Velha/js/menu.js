@@ -175,7 +175,7 @@ var MenuTutorial = function() {
     ctx.fillStyle = cor4.principal;
     ctx.fillRect(0,0,800,600);
     var imgTutorial = new Image();
-    imgTutorial.src = "/Client/TinGames/Jogos/Jogo-da-Velha/img/Tutoriais/Tutorial" + indexMenu + ".png";
+    imgTutorial.src = "/client/TinGames/Jogos/Jogo-da-Velha/img/Tutoriais/Tutorial" + indexMenu + ".png";
     ctx.drawImage(imgTutorial,0,0,800,600);
     botaoAvancar.Atualizar();
     if (indexMenu > 0) {

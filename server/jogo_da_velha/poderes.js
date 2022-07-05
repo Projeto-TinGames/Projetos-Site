@@ -1,5 +1,5 @@
 function Poder() {
-    this.img = "/Client/TinGames/Jogos/Jogo-da-Velha/img/Poderes/";
+    this.img = "/client/TinGames/Jogos/Jogo-da-Velha/img/Poderes/";
 
     this.Executa = (obj,jogador,sala) => {
         if (sala.poderesAtivados.length == 3) {

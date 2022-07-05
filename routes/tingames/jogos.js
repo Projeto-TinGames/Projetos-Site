@@ -4,16 +4,16 @@ const router = express.Router();
 const db = require("../../Server/mysqlconnection.js")
 
 router.get("/", (req, res, next) => {
-    res.sendFile(process.cwd() + "/Views/TinGames/Jogos/home.html");
+    res.sendFile(process.cwd() + "/views/TinGames/Jogos/home.html");
 });
 
 router.get("/jogo-da-velha", (req, res, next) => {
-    res.sendFile(process.cwd() + "/Views/TinGames/Jogos/JogoDaVelha/jogo_da_velha.html");
+    res.sendFile(process.cwd() + "/views/TinGames/Jogos/JogoDaVelha/jogo_da_velha.html");
 });
 
 //#region ABCash
 router.get("/abcash/questionario", (req, res, next) => {
-    res.sendFile(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_questionario.html");
+    res.sendFile(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_questionario.html");
 });
 
 router.get("/abcash/questionario/entradas/", (req, res, next) => {
@@ -21,7 +21,7 @@ router.get("/abcash/questionario/entradas/", (req, res, next) => {
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
+        res.render(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
     })
 });
 
@@ -31,7 +31,7 @@ router.get("/abcash/questionario/usuario/:id_usuario", (req, res, next) => {
 
     db.query(sql, id_usuario,(err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
+        res.render(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
     })
 });
 
@@ -41,7 +41,7 @@ router.get("/abcash/questionario/questao/:id_questao", (req, res, next) => {
 
     db.query(sql, id_questao,(err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
+        res.render(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
     })
 });
 
@@ -51,7 +51,7 @@ router.get("/abcash/questionario/resposta/:id_resposta", (req, res, next) => {
 
     db.query(sql, id_resposta,(err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
+        res.render(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"entradas",banco: result});
     })
 });
 
@@ -68,7 +68,7 @@ router.get("/abcash/questionario/usuarios", (req, res, next) => {
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"usuarios",banco: result});
+        res.render(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"usuarios",banco: result});
     })
 });
 
@@ -101,7 +101,7 @@ router.get("/abcash/questionario/questoes", (req, res, next) => {
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"questoes",banco: result});
+        res.render(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"questoes",banco: result});
     })
 });
 
@@ -119,7 +119,7 @@ router.get("/abcash/questionario/respostas", (req, res, next) => {
 
     db.query(sql, (err, result) => {
         if (err) throw err;
-        res.render(process.cwd() + "/Views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"respostas",banco: result});
+        res.render(process.cwd() + "/views/TinGames/Jogos/ABCash/abcash_banco.ejs", {tabela:"respostas",banco: result});
     })
 });
 
