@@ -72,6 +72,7 @@ main ul li div {
 
 main ul li div img {
     width: 100%;
+    height: 300px;
     border-radius: 3px;
 }
 

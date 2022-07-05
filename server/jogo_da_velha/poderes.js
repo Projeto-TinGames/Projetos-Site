@@ -1,5 +1,5 @@
 function Poder() {
-    this.img = "../../client/TinGames/Jogo-da-Velha/img/Jogadores/X.png";
+    this.img = "/client/TinGames/Jogos/Jogo-da-Velha/img/Poderes/";
 
     this.Executa = (obj,jogador,sala) => {
         if (sala.poderesAtivados.length == 3) {
@@ -12,7 +12,7 @@ function Poder() {
 function Repeticao() {
     Poder.call(this);
 
-    this.img = "../../client/TinGames/Jogo-da-Velha/img/Poderes/repeticao.png";
+    this.img += "repeticao.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador,sala) => {
@@ -24,7 +24,7 @@ function Repeticao() {
 function Troca() {
     Poder.call(this);
 
-    this.img = "../../client/TinGames/Jogo-da-Velha/img/Poderes/troca.png";
+    this.img += "troca.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador,sala) => {
@@ -75,7 +75,7 @@ function Troca() {
 function Remocao() {
     Poder.call(this);
 
-    this.img = "../../client/TinGames/Jogo-da-Velha/img/Poderes/remocao.png";
+    this.img += "remocao.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador,sala) => {
@@ -103,7 +103,7 @@ function Remocao() {
 function Pular_Vez() {
     Poder.call(this);
 
-    this.img = "../../client/TinGames/Jogo-da-Velha/img/Poderes/pular_vez.png";
+    this.img += "pular_vez.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador,sala) => {
@@ -118,7 +118,7 @@ function Pular_Vez() {
 function Inverter_Ordem() {
     Poder.call(this);
 
-    this.img = "../../client/TinGames/Jogo-da-Velha/img/Poderes/inverter_ordem.png";
+    this.img += "inverter_ordem.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador,sala) => {
@@ -144,7 +144,7 @@ function Inverter_Ordem() {
 function Voltar_Turno() {
     Poder.call(this);
 
-    this.img = "../../client/TinGames/Jogo-da-Velha/img/Poderes/voltar_turno.png";
+    this.img += "voltar_turno.png";
 
     super_executa = this.Executa;
     this.Executa = (casa,jogador,sala) => {

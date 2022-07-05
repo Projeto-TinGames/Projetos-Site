@@ -73,12 +73,12 @@ AtualizarSala = (sala) => {
 }
 
 EventosJogo = (sala) => {
-    EventoCliente(sala);
+    Eventocliente(sala);
     EventoDesconectarJogadoresInativos(sala);
     EventoDeletarSala(sala);
 }
 
-EventoCliente = (sala) => {
+Eventocliente = (sala) => {
     if (sala.evento != undefined) {
         for (var i in sala.jogadores) {
             var socket = SOCKET_LIST[sala.jogadores[i].id];
@@ -94,7 +94,7 @@ EventoDesconectarJogadoresInativos = (sala) => {
             var socket = SOCKET_LIST[sala.jogadoresInativos[i].id];
             if (socket != undefined) {
                 sala.jogadoresInativos.splice(i,1);
-                socket.emit("DesconectarCliente");
+                socket.emit("Desconectarcliente");
                 Desconectar(socket,false);
             }
         }
@@ -106,7 +106,7 @@ EventoDeletarSala = (sala) => {
         for (var i in sala.jogadores) {
             var socket = SOCKET_LIST[sala.jogadores[i].id];
             salas.splice(sala.index,1);
-            socket.emit("DesconectarCliente");
+            socket.emit("Desconectarcliente");
         }
         sala.deleta = false;
     }
