@@ -1,55 +1,57 @@
-const cors = require('cors');
-const express = require('express');
+const cors = require("cors");
+const express = require("express");
 const app = express();
-const morgan = require('morgan');
-const bodyParser = require('body-parser');
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 //Home geral
-var home = require("./routes/home.js")
+var home = require("./Routes/home.js")
 
 //TinGames
-var tingamesHome = require("./routes/tingames/home.js");
-var jogos = require("./routes/tingames/jogos.js");
-var cursos = require("./routes/tingames/cursos.js");
-var ambienteDeTestes = require("./routes/tingames/testes.js");
+var tingamesHome = require("./Routes/TinGames/main.js");
+var jogos = require("./Routes/TinGames/jogos.js");
+var cursos = require("./Routes/TinGames/cursos.js");
+var clube = require("./Routes/TinGames/clube.js");
+var ambienteDeTestes = require("./Routes/TinGames/testes.js");
 
 //Robolab
-var robolabHome = require("./routes/robolab/home.js");
-var robolabCursos = require("./routes/robolab/cursos.js");
-var robolabPatrocine = require("./routes/robolab/patrocine.js");
-var robolabCompete = require("./routes/robolab/competir.js");
+var robolabHome = require("./Routes/RoboLab/home.js");
+var robolabCursos = require("./Routes/RoboLab/cursos.js");
+var robolabPatrocine = require("./Routes/RoboLab/patrocine.js");
+var robolabCompete = require("./Routes/RoboLab/competir.js");
 
 //Inovalab
-var inovalabHome = require("./routes/inovalab/home.js");
-var inovalabCursos = require("./routes/inovalab/cursos.js");
-var inovalabSobre = require("./routes/inovalab/sobre.js");
-var inovalabProjetos = require("./routes/inovalab/projetos.js");
-var inovalabGaleria = require("./routes/inovalab/galeria.js");
-var inovalabRecursos = require("./routes/inovalab/recursos.js");
+var inovalabHome = require("./Routes/InovaLab/home.js");
+var inovalabCursos = require("./Routes/InovaLab/cursos.js");
+var inovalabSobre = require("./Routes/InovaLab/sobre.js");
+var inovalabProjetos = require("./Routes/InovaLab/projetos.js");
+var inovalabGaleria = require("./Routes/InovaLab/galeria.js");
+var inovalabRecursos = require("./Routes/InovaLab/recursos.js");
 
-app.use('/client',express.static(__dirname + "/client"));
+app.use("/client",express.static(__dirname + "/Client"));
 app.use("/", home);
 
-app.use('/tingames/client',express.static(__dirname + "/client"));
+app.use("/tingames/client",express.static(__dirname + "/Client"));
 app.use("/tingames", tingamesHome);
 app.use("/tingames/projetos/jogos", jogos);
 app.use("/tingames/projetos/cursos", cursos);
-app.use("/tingames/ambienteDeTestes", ambienteDeTestes);
+app.use("/tingames/projetos/clube", clube);
+app.use("/tingames/testes", ambienteDeTestes);
 
-app.use('/robolab/client',express.static(__dirname + "/client"));
+app.use("/robolab/client",express.static(__dirname + "/Client"));
 app.use("/robolab", robolabHome);
 app.use("/robolab/cursos", robolabCursos);
 app.use("/robolab/competicao", robolabCompete);
 app.use("/robolab/patrocinadores", robolabPatrocine);
 
-app.use('/inovalab/client',express.static(__dirname + "/client"));
+app.use("/inovalab/client",express.static(__dirname + "/Client"));
 app.use("/inovalab", inovalabHome);
 app.use("/inovalab/cursos", inovalabCursos);
 app.use("/inovalab/projetos", inovalabProjetos);

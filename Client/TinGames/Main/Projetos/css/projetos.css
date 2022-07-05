@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    max-width: 960px;
+    margin: 15px auto;
+    width: 90%;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #0a4bcb;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav ul li {
+	display: inline-block;
+    list-style: none;
+}
+
+header nav ul li #active {
+    color: #c1ffff;
+    border-bottom-color: #c1ffff;
+}
+
+header nav ul li a {
+    margin-left: 1rem;
+    padding: .25rem 0;
+
+    color: rgba(255, 255, 255, .5);
+    font-weight: 700;
+
+    border-bottom: .25rem solid transparent;
+    text-decoration: none;
+}
+header nav ul li a:hover, header nav ul li a:focus, 
+header nav ul li #active:hover, header nav ul li #active:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+main {
+    margin-top: 100px;
+}
+
+main ul li {
+	display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 2%;
+    width: 30%;
+    background-color: #063592;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main ul li div {
+    border-radius: 5px;
+    border: 1px solid #062c7a;
+}
+
+main ul li div img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+main ul li div .titulo {
+    text-align: center;
+    font-weight: 700;
+    color: #FFD6FC;
+
+    padding: 20px 10px;
+
+    text-shadow: none;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+main ul li div .descricao {
+    text-align: justify;
+    line-height: 22px;
+    color:#FFFCCA;
+    padding: 20px 10px;
+    text-shadow: none;
+}
+
+footer {
+    margin-top: 37px;
+    text-align: center;
+    color: #C1FFFF;
+}
