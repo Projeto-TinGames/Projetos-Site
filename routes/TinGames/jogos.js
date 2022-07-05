@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const db = require("../../Server/mysqlconnection.js")
+const db = require(process.cwd() + "/server/mysqlconnection.js")
 
 router.get("/", (req, res, next) => {
     res.sendFile(process.cwd() + "/views/TinGames/Jogos/home.html");
