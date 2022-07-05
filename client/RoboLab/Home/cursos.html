@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <style>
+        body {
+          text-align: center;
+          margin: auto;
+          background-color: #CFCFCF;
+          overflow-x: hidden;
+          width: 100%;
+        }
+        #corpinho{
+          background-color: #CFCFCF;
+        }
+        header {
+          background-color: #442A73;
+          padding-top: 0%;
+          position: relative;
+          
+        }
+        section {
+          position: relative;
+          background-color: #CFCFCF;
+          margin: 30px;
+          overflow-x: hidden;
+
+        }
+        #menu {
+          font-family: 'Press Start 2P', cursive;
+          color: #fffefe;
+          margin-right: -70%;
+          margin-left: 30%;
+
+        }
+
+        IMG.centro {
+          margin-right: -50%;
+          margin-left: 25%;
+        }
+        .nav {
+          overflow: auto;
+          margin:0%;
+        }
+
+        .nav-item {
+          display: block;
+          float: left;
+          color: white;
+          font-size: 10px;
+          text-align:left;
+          line-height: 62px;
+          width:25%;
+          position: relative;
+          background: #9076c0;
+        }
+        
+      .nav-item:last-child {
+        width: 25%;
+        }
+    
+      .nav-item.active,
+      .nav-item:hover {
+        background: #9076c0;
+        background: linear-gradient(#442A73, #442A73);
+        transition: all 1s;
+        }
+      .nav-item.active:after,
+      .nav-item:hover:after {
+        background: #9076c0;
+        background: linear-gradient(#442A73, #442A73);
+        transition: all 1s;
+        }
+      .nav-item:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -30px;
+        width: 60px;
+        height: 60px;
+        transform: scale(0.707) rotate(45deg);
+        z-index: 1;
+        background: #9076c0;
+        box-shadow: 3px -3px 0 2px rgba(255, 255, 255, 0.8);
+    }
+    .nav-item:last-child:after {
+    content: none;
+}
+
+      h2 {
+        font-family: 'VT323', monospace;
+
+      }
+      h3 {
+        font-family: 'Bungee', cursive;
+      }
+      p, li {
+        font-family: 'Londrina Solid', cursive;
+        text-align: justify;
+      }
+      
+      footer {
+        position: relative;
+        background-color: #442A73;
+        width:100%;
+        font-family: 'Londrina Solid', cursive;
+
+      }
+      
+      </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+<!--é necessário apenas um link rel para as fontes já que
+  todas vem do mesmo lugar :) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<!--link href com todas as fontes que usamos sem precisar colocar um
+link href para cada uma :D -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Londrina+Solid:wght@300&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="corpinho">
+    <header>
+        <img src="logo-robo.jpeg" alt="RoboLab" width=180 height=150>
+        <img class="centro" src="logo-nome.jpeg" alt="RoboLab" width=280 height=120 float=middle>
+          <ol class="nav">
+            <li class="nav-item">
+              <a id="menu" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="menu" href="cursos.html">Aulas</a>
+            </li>
+            <li class="nav-item">
+              <a id="menu" href="competicao.html">Competições</a>
+            </li>
+            <li class="nav-item">
+              <a id="menu" href="patrocinadores.html">Patrocinadores</a>
+            </li>
+          </ol>
+        </header>
+<!--separa-->
+          <section>
+          <div class="row">
+            <img alt="Nós" class="d-block p-center" style="height: 250px;" src="nos.png" />
+            <div class="col-md-8" style="padding-top: 30px;">
+            
+              <h3>
+				      Conteúdo ofertado pelo RoboLab!
+			        </h3>
+              <p>
+                O laboratório oferece aulas para os alunos do Campus Restinga. 
+                Aulas para que os alunos possam, de maneira independente, aprender
+                e trabalhar sobre diversos assuntos dentro da robótica!
+                Nosso objetivo principal é que, através dessas aulas, o aluno
+                nutra desejos pelo aprendizado e se motive por buscar mais,
+                ampliando seu conhecimento computacional e abrindo nossos 
+                horizontes para sua vida!
+              </p>
+     </div>
+     <div class="col-md-8">
+      <h2>
+        Aulas de Arduino!
+      </h2>
+      <p>
+        Atualmente já contamos com algumas aulas introduzindo o aluno
+        a tecnologia do Arduino, ensinando desde o inicío para que mesmo
+        quem não tiver experiência alguma, consiga realizar pequenos cógidos
+        e montar sua placa sem problemas!
+      </p>
+      <p>
+        As aulas podem ser acessadas de modo online através da plataforma
+        do Youtube, ou se preferir algo mais teorico, também existem aulas
+        explicadas por slides! 
+      </p>
+      <p>
+      Em nosso canal no Youtube existe uma playlist 
+        designada justamente para todas as aulas com a finalidade de ensinar 
+        sobre Arduino e sua programação!
+      </p>
+      <p>
+          Para acessar as aulas teóricas, basta clicar no nome da aula
+          que deseja aprender! 
+      </p>
+      <p>
+        <a style="color:#9076c0;" href="aula1.pdf">Aula 1 - Acessando o Tinkercad</a></br>
+        <a style="color:#9076c0;" href="aula2.pdf">Aula 2 - Entrada e saida de informações</a>
+
+      </p>
+    </div>
+
+    <div style="padding: 5%;">
+      <img alt="Arduino" class="d-block p-center" style="height: 200px;" src="arduino.png" />
+    </div>
+
+      <div class="container">
+        
+      <img alt="GIF" style="width:300px; height: 200px;" src="gifizinho1.gif"/>
+      
+      <img alt="GIF" style="width:300px; height: 200px;" src="gifizinho2.gif"/>
+
+      <img alt="GIF" style="width:300px; height: 200px;" src="gifizinho3.gif"/>
+
+      </div>
+      
+    <div class="col" style="color:#636360d8; padding-left: 31%;">
+      <p>Demonstração de algumas tecnologias feitas com Arduino!</p>
+    </div>
+ 
+    <div class="col-md-8" style="padding-top: 20px;">
+      <h2>
+			  L E G O
+			</h2>
+      <p>
+        Um dos projetos do RoboLab é o uso de robôs "LEGO" participando de competições como a "FLL". 
+        Estamos projetando um robô espefícico para competições, que irá concluir uma série de desafios, como por exemplos, obtáculos e encruzilhadas.
+        O robô fica disponibilizado no laboratório do IFRS - Campus Restinga para os alunos verem e aprenderem. 
+        O projeto está conpleto e nossa equipe preparada, precisamos apenas de você!
+      </p>
+      <div class="col-md-4">
+        <video width="400" height="300" controls="controls" autoplay="autoplay">
+          <source src="LEGO_editado.mp4" type="video/mp4">
+          </video>
+        </div>
+     </div>
+     <div style="padding:5%;">
+      <img alt="LEGO" class="d-block p-center" style="height: 200px;" src="lego.png" />
+    </div>
+
+    <img alt="Simulador" class="d-block p-center" style="height: 200px;" src="simulador.png" />
+            <div class="col-md-8" style="padding-top: 30px;">
+            
+              <h2>
+				      Simuladores!
+			        </h2>
+              <p>
+                Neste ano com a pandemia do Covid-19 o laboratório não deixou seus alunos sem conteúdo, resolvemos fazer vídeoaulas de alguns simuladores que auxiliam
+                na compreensão do ensino de robótica. Os simuladores serão tanto para iniciantes, quanto para níveis avançados, iremos começar com dois 
+                simuladores: RoboMind Online/Offline e Sbotics.  
+              </p>
+              <div class="container">
+        
+                  <video width="400" height="300" controls="controls" autoplay="autoplay">
+                    <source src="Robomind_editado.mp4" type="video/mp4">
+                    </video>
+          
+                </div></br></br>
+     </div>
+            <div class="col-md-8" style="padding-top: 30px;">
+            
+              <h2>
+				      Montagem de robôs!
+			        </h2>
+              <p>
+                Nosso laboratório também conta com vídeoaulas
+                ensinando a montagem de alguns KITs de robôs, como
+                por exemplo, o KIT de robótica iniciante da RoboCore
+                ou o KIT Robo Arm também da Robocore!
+              </p>
+              <p>
+              <!--provisório-->
+                <a style="color:#9076c0;" href="https://www.robocore.net/tutoriais/kit-iniciante-robotica-introducao.html">Montagem KIT Robótica Iniciante - RoboCore</a></br>
+                <a style="color:#9076c0;" href="https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/1080/RoboARM__Manual%20de%20Montagem.pdf?name=GR_LojaVirtual&categoria=roboarm&prod=manual">Montagem KIT Robo Arm - RoboCore</a></br>
+                <a style="color:#9076c0;" href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/1170/manual_rocket_A3.pdf">Montagem KIT Robo Tank - RoboCore</a>
+
+              </p>
+     </div>
+     <img alt="Robo Iniciante" class="d-block p-center" style="height: 200px; width: 300px;" src="roboiniciante.gif" />
+     <div style="padding-left: 30%;">
+     <img alt="Projetos" class="d-block p-center" style="height: 200px;" src="projetos.png">
+    </div>
+     <div style="padding-top: 50px;">
+       <h2>
+         Projetos futuros!
+       </h2>
+       <ul>
+         <li>Produzir aulas de Arduino avançado</li>
+         <li>Participar da FLL</li>
+         <li>Ser feliz</li>
+       </ul>
+    </div>
+  <!--row-->
+  </div> 
+          </section>
+<!--separa-->
+<footer style="padding-top: 10px;">
+  <div class="row" style="margin: 10px;">
+    
+    <div class="col-md-4 d-block">
+      <address>
+        <strong style="color: black;">RoboLab Restinga</strong><br /><a  style="color: #CFCFCF;" href="https://www.facebook.com/RoboLab-Restinga-107192431253335" target="_blank"><img style="width: 10%; height: 20%; margin-left: 2px;" src="facebook.png">facebook/RoboLab Restinga</a></br><a  style="color: #CFCFCF;" href="https://www.instagram.com/robolabrestinga/" target="_blank"><img style="width: 10%; height: 20%; margin-left: 2px;" src="instagram.png">Instagram/robolabrestinga</a>
+      </address>
+    </div>
+
+    <div class="col-md-4 d-block">
+      <address>
+      </br><a style="color: #CFCFCF;" href="https://www.youtube.com/channel/UCL29JLVueqZs3pHW3Qr2UZg" target="_blank"><img style="width: 8%; height: 20%; margin-left: 2px;" src="youtube.png"> Youtube/RoboLab Restinga</a></br><a style="color: #CFCFCF;" href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank"><img style="width: 8%; height: 20%; margin-left: 2px;" src="gmail.png"> robolab@restinga.ifrs.edu.br</a>
+      </address>
+    </div>
+
+    <div class="col-md-4">
+      <address>
+        
+        <strong style="color: black;">IFRS - Campus Restinga</strong><a style="color: #CFCFCF;" href="https://ifrs.edu.br/restinga/" target="_blank"><br /> R. Alberto Hoffmann, 285<br /> Restinga, Porto Alegre - RS<br /> <abbr title="CEP">CEP:</abbr> 91791-508 </a>
+      </address>
+    </div>
+  </div>
+  </footer>
+  <!--separa-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+          </body>
+      </html>
