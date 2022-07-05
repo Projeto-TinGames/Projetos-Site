@@ -42,7 +42,7 @@ header nav ul li #active:hover, header nav ul li #active:focus {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 main ul li {
@@ -50,7 +50,7 @@ main ul li {
     list-style: none;
     text-decoration: none;
     margin-left: 2%;
-    width: 30%;
+    width: 289px;
     background-color: #063592;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -64,6 +64,7 @@ main ul li div {
 main ul li div img {
     width: 100%;
     border-radius: 3px;
+    min-height: 210px;
 }
 
 main ul li div .titulo {

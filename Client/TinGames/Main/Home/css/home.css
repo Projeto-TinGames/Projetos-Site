@@ -12,7 +12,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #0a4bcb;
+    background-color: #140615;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -54,7 +54,7 @@ main figure {
 }
 
 main figure img {
-    max-width: 320px;
+    width: 320px;
 }
 
 main figcaption {
