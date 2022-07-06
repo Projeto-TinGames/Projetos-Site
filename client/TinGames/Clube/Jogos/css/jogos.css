@@ -49,11 +49,16 @@ main {
     margin-top: 50px;
 }
 
+main ul {
+    text-align: center;
+}
+
 main ul li {
 	display: inline-block;
     list-style: none;
     text-decoration: none;
-    margin-left: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
     width: 289px;
     background-color: #31550a;
     border-radius: 5px;

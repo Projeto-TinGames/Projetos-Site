@@ -38,7 +38,7 @@ header ul li figcaption {
 }
 
 header ul li figcaption p {
-    color: #C1FFFF;
+    color: white;
 }
 
 header ul li figcaption a {
@@ -54,12 +54,17 @@ main {
     margin-top: 50px;
 }
 
+main ul {
+    text-align: center;
+}
+
 main ul li {
 	display: inline-block;
     list-style: none;
     text-decoration: none;
-    margin-left: 2%;
-    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 289px;
     background-color: rgb(14, 85, 27);
     border-radius: 5px;
     margin-bottom: 20px;
@@ -78,6 +83,13 @@ main ul li div img {
 
 main ul li div p {
     text-align: center;
-    color:#FFFCCA;
+    color: white;
+    line-height: 22px;
     padding: 20px 10px;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
 }
