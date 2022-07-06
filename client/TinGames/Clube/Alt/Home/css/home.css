@@ -12,7 +12,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #151515;
+    background-color: #40700C;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -26,8 +26,8 @@ header nav ul li {
 }
 
 header nav ul li #active {
-    color: #FB3B36;
-    border-bottom-color: #FB3B36;
+    color: white;
+    border-bottom-color: white;
 }
 
 header nav ul li a {
@@ -75,7 +75,7 @@ main ul li div .titulo {
     text-align: center;
     font-weight: 700;
     font-size: 28px;
-    color: #FB3B36;
+    color: white;
 
     padding: 10px 10px;
 
@@ -85,7 +85,7 @@ main ul li div .titulo {
 
 main ul li div .descricao {
     text-align: justify;
-    color: #FCF284;
+    color: white;
     padding: 10px 10px;
     text-shadow: none;
     line-height: 30px;
@@ -94,5 +94,5 @@ main ul li div .descricao {
 footer {
     margin-top: 80px;
     text-align: center;
-    color: #FB3B36;
+    color: white;
 }
