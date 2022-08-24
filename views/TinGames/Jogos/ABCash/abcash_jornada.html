@@ -45,12 +45,12 @@ https://github.com/sno/unity-webgl-responsive
       const buildNum = urlParams.get('buildNum');
       var buildUrl = "/client/TinGames/Jogos/ABCash/Jornada/Builds/Build" + buildNum + "/";
       console.log(buildUrl);
-      var loaderUrl = buildUrl + "/Jornada.loader.js";
+      var loaderUrl = buildUrl + "Jornada.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Jornada.data",
-        frameworkUrl: buildUrl + "/Jornada.framework.js",
-        codeUrl: buildUrl + "/Jornada.wasm",
-        streamingAssetsUrl: "StreamingAssets",
+        dataUrl: buildUrl + "Jornada.data",
+        frameworkUrl: buildUrl + "Jornada.framework.js",
+        codeUrl: buildUrl + "Jornada.wasm",
+        streamingAssetsUrl: buildUrl + "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ABCash",
         productVersion: "1.0",

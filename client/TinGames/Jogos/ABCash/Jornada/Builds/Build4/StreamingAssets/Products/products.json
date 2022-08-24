@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Produto A",
+            "workRequired": 100,
+            "price": 1.0
+        },
+        {
+            "name": "Produto B",
+            "workRequired": 200,
+            "price": 2.0
+        },
+        {
+            "name": "Produto C",
+            "workRequired": 300,
+            "price": 3.0
+        }
+    ]
+}
