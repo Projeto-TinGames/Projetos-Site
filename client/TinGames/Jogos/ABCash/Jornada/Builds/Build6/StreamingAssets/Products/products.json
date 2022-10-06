@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "Produto A",
+            "price": 1.0,
+            "work": 100
+        },
+        {
+            "id": 1,
+            "name": "Produto B",
+            "price": 2.0,
+            "work": 200
+        },
+        {
+            "id": 2,
+            "name": "Produto C",
+            "price": 3.0,
+            "work": 300
+        }
+    ]
+}
