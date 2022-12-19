@@ -1,0 +1,656 @@
+elemento {
+  --font-h1: 26px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #17181d;
+  color: #FCD9B8;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+
+  background-color: black;
+  color: white;
+
+  height: 60px;
+
+}
+
+nav li {
+  margin: auto;
+}
+
+nav #imagem-nav {
+  display: flex;
+}
+
+nav #menu-nav {
+  display: flex;
+}
+
+nav #menu-nav li {
+  margin-left: 15%;
+}
+
+nav #menu-nav:last-child{
+  margin-right: 20%;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+}
+
+nav li a:hover{
+  color: #E09145;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* END NAV */
+
+/* HOME */
+
+.bg1 {
+  background-image: url(/client/RoboLab/images/bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 60%;
+  backdrop-filter: brightness(60%);
+}
+
+.home {
+  margin: auto;
+  text-align: center;
+  display: grid;
+}
+
+.home h1 {
+  margin-top: 75px;
+  margin-bottom: 20px;
+  font-size: 46px;
+}
+.home h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+.home h5 {
+  margin: auto;
+  font-weight: 100;
+  font-size: 16px;
+  width: 500px;
+}
+
+button {
+  width: 180px;
+  height: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+#container-imagens{
+  display: flex;
+}
+
+#arrow{
+  cursor: pointer;
+  margin: auto;
+  height: 1.8vw;
+}
+
+#apresentacao-trabalho{
+  font-size: 26px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#imagem-projetos{
+  margin: 30px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#imagem-projetos img {
+  width: 24%;
+  border-radius: 30px;
+}
+
+#galeria-button {
+  border: none !important;
+  display: block;
+  margin: auto;
+  background-color: #352f2b;
+  color: #E09145;
+  font-weight: 700;
+}
+
+#button-galeria a{
+  display: flex;
+  margin: auto;
+  text-decoration: none;
+}
+
+/*END HOME*/
+
+.bg2 {
+  background-image: url(/client/RoboLab/images/bg2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 765px;
+}
+
+#origem h1{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#origem {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+span {
+  color: #E09145;
+  font-weight: 600;
+}
+span2{
+  font-size: 20px;
+}
+
+#container-fund{
+  width: 75%;
+  margin: 10% auto;
+  
+}
+
+#infos-fund {
+  background-color: #352f2b;
+  margin: auto;
+  width: 43%;
+  border-radius: 30px;
+  display: flex;
+  box-shadow: 20px 20px 80px #000000;
+}
+
+#container-fund h2{
+  text-align: left;
+  font-size: 26px
+}
+
+#aligned-container {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+#aligned-container h3 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#container-fund img{
+  margin-left: 60px;
+  max-height: 160px;
+}
+
+/*METODOLOGIA*/
+
+#metodologia {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+#metodologia h1{
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+#infos-metodologia{
+  font-size: 24px;
+  margin: auto;
+  display: flex;
+  width: 85%;
+  text-align: justify;
+}
+
+#infos-metodologia h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#container-metodologia{
+  padding: 40px;
+}
+
+#container-metodologia button {
+  border: none !important;
+  margin-top: 3%;
+  background-color: #352f2b;
+  color: #E09145;
+  font-weight: 700;
+}
+
+.bg3{
+  background-image: url(/client/RoboLab/images/fundoRoboLab.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+}
+
+#bg-projetos{
+  background: url('/client/RoboLab/images/.jpg') center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#button-projetos a{
+  display: flex;
+  margin: auto;
+  text-decoration: none;
+}
+
+#button-projetos button {
+  margin: 12px auto;
+  height: 35px;
+  width: 280px;
+  border: none !important;
+  background-color: #352f2b;
+  color: #E09145;
+  font-weight: 700;
+}
+
+
+/*LABORATÓRIO*/
+
+#laboratorio {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+#laboratorio h1{
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+#infos-laboratorio{
+  font-size: 24px;
+  margin: auto;
+  display: flex;
+  width: 85%;
+  text-align: justify;
+}
+
+#infos-laboratorio h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#container-laboratorio{
+  padding: 40px;
+}
+
+#box-image h3{
+  margin-left: 8%;
+  width: 80%;
+}
+
+.bg4{
+  background-image: url(/client/RoboLab/images/mapa2.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+}
+
+/*PROJETOS*/
+
+#separador-button{
+  display: flex;
+  margin: auto;
+}
+
+#ancora-projetos{
+  text-decoration: none;
+  margin: auto;
+}
+
+#projetos-button{
+  border: none !important;
+  background-color: #352f2b;
+  color: #E09145;
+  font-weight: 700;
+  width: 200px;
+  height: 40px;
+}
+
+#projeto:first-child{
+  margin-top: 80px;
+}
+
+#projetos h1{
+  margin-top: 9%;
+  font-size: 45px;
+  text-align: center;
+}
+
+#container-projetos{
+  display: flex;
+  height: 475px;
+  width: 30%;
+  margin: 20px auto;
+  border-radius: 30px;
+  flex-direction: column;
+}
+
+#centralizer-projetos{
+  display: flex;
+  justify-content: space-around;
+}
+
+#bg-projetos{
+  border-radius: 30px;
+  width: 100%;
+  height: 65%;
+  background-color: #352f2b;
+  border-radius: 30px 30px 0 0;
+}
+
+#bg-projetos img{
+  margin: 10px auto;
+  display: flex;
+}
+
+#info-projetos{
+  border-radius: 0 0 30px 30px;
+  background-color: #000000;
+  width: 100%;
+  height: 55%;
+}
+
+#text-projetos{
+  margin-top: 20px ;
+  text-align: center;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+#text-projetos h5{
+  margin-top: 5px;
+}
+
+#box-image h3 {
+  margin: auto;
+}
+
+#backTop{
+  display: flex;
+  margin-top: 70px;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+#backTop img{
+  width: 45px;
+}
+
+footer {
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 125px;
+  background-color: #352f2b;
+  margin-top: 10px;
+}
+
+footer img {
+  width: 70px;
+  border-radius: 50px;
+}
+
+footer img:last-child{
+  margin-left: 5px;
+}
+footer img:first-child{
+  margin-right: 5px;
+}
+
+#container-footer{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#redes-footer{
+  margin: auto;
+  display: flex;
+}
+
+#container-footer h4{
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #E09145;
+}
+
+button a{
+  margin: auto;
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+/* link que foi visitado */
+a:visited {
+   color: inherit;
+}
+
+#coluna_projetos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#projetos_pagina{
+  margin-top: 60px;
+}
+
+#bgteste {
+  display: flex;
+  margin-top: 40px;
+  background-color: tomato;
+  min-width: 47%;
+  height: 300px;
+  flex-direction: column;
+}
+
+#bgteste img{
+  min-width: 47%;
+  height: 50px;
+  margin: auto;
+}
+
+#bgteste #imagem{
+  background-color: red;
+  min-width: 47%;
+  height: 250px;
+  display: flex;
+}
+
+/*MEDIAS*/
+
+@media (max-width: 610px){
+  .bg1 {
+    height: 75%;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 610px){
+  #backTop{
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 730px){
+#infos-metodologia{
+  width: auto;
+  flex-wrap: wrap;
+}
+nav #menu-nav li {
+  margin-left: 10%;
+}
+.bg4 {
+  display: none;
+}
+
+}
+
+@media (max-width: 1100px){
+  #arrow{
+    height: 3.8vw;
+  }
+  #imagem-projetos img {
+    width: 32%;
+  }
+  #imagem-projetos #img4{
+    display: none;
+  }
+}
+
+@media (max-width: 900px){
+  nav #menu-nav:last-child{
+    margin-right: 30%;
+  }   
+  #container-projetos:last-child{
+    display: none;
+  }
+  #container-projetos {
+    width: 45%;
+  } 
+}
+
+@media (max-width: 900px){
+  #imagem-projetos img {
+    width: 48%;
+  }
+  #imagem-projetos #img3 {
+    display: none;
+  }
+  #arrow{
+    height: 5.8vw;
+  }
+
+}
+
+@media (max-width: 630px){
+  #imagem-projetos img {
+    width: 85%;
+  }
+  #imagem-projetos #img2 {
+    display: none;
+  }
+  #container-projetos:first-child{
+    display: none;
+  }
+  #container-projetos {
+    width: 75%;
+  } 
+}
+
+@media (max-width: 585px){
+  #bg-projetos img {
+    margin-top: 25px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 435px){
+  #bg-projetos img{
+    margin-top: 35px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 850px){
+  #bgteste{
+    min-width: 85%;
+  }
+}
+
+@media (max-width: 768px){
+  #container-fund img{
+    display: none;
+  } 
+  #infos-fund {
+    width: 50%;
+  }
+  .bg2{
+    min-height: 550px;
+  }
+  #aligned-container h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .home h5 {
+    width: 85%;
+  }
+  .home{
+    margin-top: 0px;
+  }
+  .home h1 {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 1100px){
+  #infos-fund {
+    width: 75%;
+  }
+  .bg1 {
+    height: 75%;
+  }
+}
+
+

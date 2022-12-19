@@ -22,10 +22,7 @@ var clube = require("./routes/TinGames/clube.js");
 var ambienteDeTestes = require("./routes/TinGames/testes.js");
 
 //Robolab
-var robolabHome = require("./routes/RoboLab/home.js");
-var robolabCursos = require("./routes/RoboLab/cursos.js");
-var robolabPatrocine = require("./routes/RoboLab/patrocine.js");
-var robolabCompete = require("./routes/RoboLab/competir.js");
+var robolab = require("./routes/RoboLab/robolab.js");
 
 //Inovalab
 var inovalabHome = require("./routes/InovaLab/home.js");
@@ -46,10 +43,7 @@ app.use("/tingames/projetos/clube", clube);
 app.use("/tingames/testes", ambienteDeTestes);
 
 app.use("/robolab/client",express.static(__dirname + "/client"));
-app.use("/robolab", robolabHome);
-app.use("/robolab/cursos", robolabCursos);
-app.use("/robolab/competicao", robolabCompete);
-app.use("/robolab/patrocinadores", robolabPatrocine);
+app.use("/robolab", robolab);
 
 app.use("/inovalab/client",express.static(__dirname + "/client"));
 app.use("/inovalab", inovalabHome);
