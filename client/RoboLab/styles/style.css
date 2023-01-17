@@ -7,30 +7,31 @@ elemento {
   padding: 0;
   list-style: none;
   box-sizing: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 body {
-  background-color: #17181d;
-  color: #FCD9B8;
+  background-color: #17181d!important;
+  color: #FCD9B8 !important;
   height: 100vh;
 }
 
 nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 100;
+  width: 100% !important;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 100 !important;
 
-  list-style: none;
-  justify-content: space-around;
-  display: flex;
+  list-style: none !important;
+  justify-content: space-around !important;
+  display: flex !important;
 
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 
-  height: 60px;
+  height: 60px !important;
 
+  margin-top: auto !important;
 }
 
 nav li {
@@ -38,37 +39,37 @@ nav li {
 }
 
 nav #imagem-nav {
-  display: flex;
+  display: flex !important;
 }
 
 nav #menu-nav {
-  display: flex;
+  display: flex !important;
 }
 
 nav #menu-nav li {
-  margin-left: 15%;
+  margin-left: 15% !important;
 }
 
 nav #menu-nav:last-child{
-  margin-right: 20%;
+  margin-right: 20% !important;
 }
 
 nav ul li a:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 nav li a:hover{
-  color: #E09145;
+  color: #E09145 !important;
 }
 
 nav a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 nav a:visited {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 /* END NAV */
@@ -84,7 +85,7 @@ nav a:visited {
 }
 
 .home {
-  margin: auto;
+  margin: 40px auto;
   text-align: center;
   display: grid;
 }
@@ -97,6 +98,9 @@ nav a:visited {
 .home h2 {
   margin-bottom: 15px;
   font-size: 26px;
+  width: 95%;
+  margin: auto;
+  text-align: center;
 }
 .home h5 {
   margin: auto;
@@ -106,10 +110,10 @@ nav a:visited {
 }
 
 button {
-  width: 180px;
-  height: 40px;
-  border-radius: 30px;
-  cursor: pointer;
+  width: 180px !important;
+  height: 40px !important;
+  border-radius: 30px !important;
+  cursor: pointer !important;
 }
 
 
@@ -150,10 +154,14 @@ button {
   font-weight: 700;
 }
 
-#button-galeria a{
+#button-galeria{
   display: flex;
   margin: auto;
   text-decoration: none;
+}
+
+#separador-button{
+  margin: auto;
 }
 
 /*END HOME*/
@@ -164,6 +172,7 @@ button {
   background-position: center;
   min-height: 765px;
 }
+
 
 #origem h1{
   margin-bottom: 40px;
@@ -250,12 +259,16 @@ span2{
   padding: 40px;
 }
 
-#container-metodologia button {
+button {
   border: none !important;
   margin-top: 3%;
   background-color: #352f2b;
   color: #E09145;
   font-weight: 700;
+}
+button:hover{
+  background-color: #E09145;
+  color: #352f2b;
 }
 
 .bg3{
@@ -340,78 +353,13 @@ span2{
 
 /*PROJETOS*/
 
-#separador-button{
-  display: flex;
-  margin: auto;
-}
-
-#ancora-projetos{
-  text-decoration: none;
-  margin: auto;
-}
-
-#projetos-button{
-  border: none !important;
-  background-color: #352f2b;
-  color: #E09145;
-  font-weight: 700;
-  width: 200px;
-  height: 40px;
-}
-
-#projeto:first-child{
-  margin-top: 80px;
-}
-
-#projetos h1{
-  margin-top: 9%;
-  font-size: 45px;
-  text-align: center;
-}
-
-#container-projetos{
-  display: flex;
-  height: 475px;
-  width: 30%;
-  margin: 20px auto;
-  border-radius: 30px;
-  flex-direction: column;
+#info-projetos{
+  width: 100%;
 }
 
 #centralizer-projetos{
-  display: flex;
-  justify-content: space-around;
-}
-
-#bg-projetos{
-  border-radius: 30px;
-  width: 100%;
-  height: 65%;
-  background-color: #352f2b;
-  border-radius: 30px 30px 0 0;
-}
-
-#bg-projetos img{
-  margin: 10px auto;
-  display: flex;
-}
-
-#info-projetos{
-  border-radius: 0 0 30px 30px;
-  background-color: #000000;
-  width: 100%;
-  height: 55%;
-}
-
-#text-projetos{
-  margin-top: 20px ;
-  text-align: center;
-  font-weight: 100;
-  font-size: 28px;
-}
-
-#text-projetos h5{
-  margin-top: 5px;
+  margin: auto;
+  width: 70%;
 }
 
 #box-image h3 {
@@ -427,6 +375,7 @@ span2{
 
 #backTop img{
   width: 45px;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -437,12 +386,12 @@ footer {
   width: 100%;
   height: 125px;
   background-color: #352f2b;
-  margin-top: 10px;
 }
 
 footer img {
   width: 70px;
   border-radius: 50px;
+  margin-top: 15px;
 }
 
 footer img:last-child{
@@ -484,6 +433,51 @@ a:visited {
    color: inherit;
 }
 
+/* GALERIA */
+#title_projeto, #title_galeria{
+  margin-top: 60px;
+  font-size: 42px;
+  text-align: center;
+}
+#foto_galeria h4{
+  text-align: center;
+  font-size: 20px;
+  background-color: #dddddd;
+  color: #352f2b;
+  border-radius: 0 0 10px 10px;
+}
+
+#coluna_galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#foto_galeria {
+  display: flex;
+  margin-top: 40px;
+  width: 320px;
+  height: 260px;
+  flex-direction: column;
+}
+
+#galeria_pagina{
+  margin-top: 60px;
+}
+
+#foto_galeria #imagem{
+  background-color: red;
+  min-width: 47%;
+  height: 250px;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+}
+
+#foto_galeria:last-child{
+  margin-bottom: 40px;
+}
+/* PROJETOS */
+
 #coluna_projetos{
   display: flex;
   flex-wrap: wrap;
@@ -494,28 +488,87 @@ a:visited {
   margin-top: 60px;
 }
 
-#bgteste {
+#foto_projetos {
   display: flex;
   margin-top: 40px;
-  background-color: tomato;
+  background-color: #000000;
   min-width: 47%;
   height: 300px;
   flex-direction: column;
+  border-radius: 30px;
 }
 
-#bgteste img{
+#foto_projetos img{
   min-width: 47%;
   height: 50px;
   margin: auto;
 }
 
-#bgteste #imagem{
-  background-color: red;
-  min-width: 47%;
+#foto_projetos #imagem{
+  background-color: #352f2b;
+  width: 100%;
   height: 250px;
   display: flex;
+  border-radius: 20px 20px 0 0;
 }
 
+#foto_projetos:last-child{
+  margin-bottom: 40px;
+}
+
+#foto_projetos #imagem_projeto{
+  height: 90%;
+  width: 45%;
+}
+
+#foto_projetos:hover{
+  transition: 0.5ms;
+  opacity: 55%;
+}
+
+.w-100{
+  border-radius: 20px;
+}
+
+.carousel {
+  margin-top: 2%;
+  width: 70%;
+  margin: 10% auto; 
+  top: -20px;
+}
+
+.carousel-inner {
+  border-radius: 30px;
+}
+
+.carousel-inner2{
+  display: none;
+}
+
+.carousel-mobile{
+  display: none;
+}
+
+.bg6{
+  position: relative;
+  top: 60px;
+  background-image: url(/client/RoboLab/images/bg2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 440px;
+  
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/client/RoboLab/images/arrowL.png) !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+.carousel-control-next-icon {
+  background-image: url(/client/RoboLab/images/arrowR.png) !important;
+  height: 40px !important;
+  width: 40px !important;
+}
 /*MEDIAS*/
 
 @media (max-width: 610px){
@@ -523,7 +576,10 @@ a:visited {
     height: 75%;
   }
   nav {
-    display: none;
+    display: none !important;
+  }
+  .bg6{
+    min-height: 220px ;
   }
 }
 
@@ -531,15 +587,16 @@ a:visited {
   #backTop{
     margin-top: 60px;
   }
+  
 }
 
-@media (max-width: 730px){
+@media (max-width: 790px){
 #infos-metodologia{
   width: auto;
   flex-wrap: wrap;
 }
 nav #menu-nav li {
-  margin-left: 10%;
+  margin-left: 10% !important;
 }
 .bg4 {
   display: none;
@@ -561,7 +618,7 @@ nav #menu-nav li {
 
 @media (max-width: 900px){
   nav #menu-nav:last-child{
-    margin-right: 30%;
+    margin-right: 30% !important;
   }   
   #container-projetos:last-child{
     display: none;
@@ -604,6 +661,12 @@ nav #menu-nav li {
     margin-top: 25px;
     width: 60%;
   }
+  #foto_projetos:last-child{
+    display: none;
+  }
+  #foto_projetos{
+    min-width: 75%;
+  }
 }
 
 @media (max-width: 435px){
@@ -611,11 +674,11 @@ nav #menu-nav li {
     margin-top: 35px;
     width: 85%;
   }
-}
-
-@media (max-width: 850px){
-  #bgteste{
-    min-width: 85%;
+  .carousel-pc{
+    display: none;
+  }
+  .carousel-mobile{
+    display: flex;
   }
 }
 
@@ -643,6 +706,9 @@ nav #menu-nav li {
   .home h1 {
     margin-top: 80px;
   }
+  .carousel{
+    width: 90%;
+  }
 }
 @media (max-width: 1100px){
   #infos-fund {
@@ -653,4 +719,24 @@ nav #menu-nav li {
   }
 }
 
+@media(max-width: 800px){
+  .fotos{
+    width: 48%;
+  }
+  #foto_projetos #imagem_projeto{
+    height: 80%;
+    width: 65%;
+  }
+}
+@media(max-width: 600px){
+  .fotos{
+    width: 85%;
+  }
+}
+@media(max-width: 340px){
+  #foto_projetos #imagem_projeto{
+    height: 80%;
+    width: 80%;
+  }
+}
 
